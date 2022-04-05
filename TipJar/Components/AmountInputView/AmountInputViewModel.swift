@@ -8,5 +8,5 @@
 import Foundation
 
 class AmountInputViewModel: ObservableObject {
-    @Published var value: String = DefaultValues.string
+    @Published var value: Double = DefaultValues.double
 }

@@ -11,13 +11,26 @@ struct MainScreen: View {
     @ObservedObject var viewModel = MainScreenViewModel()
     var body: some View { renderBody() }
 
-    private func renderField() -> some View {
-        AmountInputView(viewModel: viewModel.amountInputViewModel)
+    private func renderPriceAmountInputView() -> some View {
+        AmountInputView(viewModel: viewModel.priceAmountViewModel)
+    }
+
+    private func renderTipAmountInputView() -> some View {
+        AmountInputView(
+            viewModel: viewModel.tipAmountViewModel,
+            style: TipAmountInputViewStyle()
+        )
+    }
+
+    private func renderStepperView() -> some View {
+        StepperView(viewModel: viewModel.stepperViewModel)
     }
 
     private func renderBody() -> some View {
-        VStack {
-            renderField()
+        VStack(spacing: Spaces.value32) {
+            renderPriceAmountInputView()
+            renderStepperView()
+            renderTipAmountInputView()
             Button(action: viewModel.buttonTap) {
                 Text("tap")
             }

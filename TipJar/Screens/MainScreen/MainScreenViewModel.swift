@@ -8,9 +8,11 @@
 import Foundation
 
 class MainScreenViewModel: ObservableObject {
-    var amountInputViewModel = AmountInputViewModel()
+    var priceAmountViewModel = AmountInputViewModel()
+    var tipAmountViewModel = AmountInputViewModel()
+    var stepperViewModel = StepperViewModel()
 
     func buttonTap() {
-        amountInputViewModel.value = "200"
+        print(priceAmountViewModel.value / stepperViewModel.value.doubleValue)
     }
 }

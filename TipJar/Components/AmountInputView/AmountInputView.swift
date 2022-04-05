@@ -10,10 +10,15 @@ import SwiftUI
 
 struct AmountInputView: View {
     @ObservedObject var viewModel = AmountInputViewModel()
+    let style: AmountInputViewStyle
     var body: some View { renderBody() }
 
-    init(viewModel: AmountInputViewModel) {
+    init(
+        viewModel: AmountInputViewModel,
+        style: AmountInputViewStyle = MainAmountInputViewStyle()
+    ) {
         self.viewModel = viewModel
+        self.style = style
     }
 
     private func renderTitle() -> some View {
@@ -21,34 +26,54 @@ struct AmountInputView: View {
             .font(Fonts.robotoMedium16)
     }
 
+    private func renderSymbol() -> some View {
+        Text(style.symbol)
+            .font(Fonts.robotoMedium24)
+    }
+
     private func renderTextfield() -> some View {
-        HStack {
-            Text(Symbols.dollar)
-                .padding(.leading, Spaces.value22)
-                .font(Fonts.robotoMedium24)
-            TextField("100.00", text: $viewModel.value)
-                .font(Fonts.robotoMedium42)
-                .keyboardType(.decimalPad)
-                .multilineTextAlignment(.center)
-                .padding(.leading, -Spaces.value22)
-                .clipped()
-            
-        }.frame(height: FrameHeight.value82)
-        .overlay(
-            RoundedRectangle(cornerRadius: CornerRadiuses.value12)
-                .stroke(
-                    Colors.Gray.lighter,
-                    lineWidth: 1
-                )
-                .shadow(color: Colors.Gray.lighter, radius: 2, x: 1, y: 2)
-                .clipShape(RoundedRectangle(cornerRadius: CornerRadiuses.value12))
-        )
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return TextField("100.00", value: $viewModel.value, formatter: formatter)
+            .font(Fonts.robotoMedium42)
+            .keyboardType(.decimalPad)
+            .multilineTextAlignment(.center)
+            .padding(
+                .leading,
+                style.symbolAlignment == .leading
+                ? -Spaces.value22
+                : DefaultValues.cgFloat
+            )
+            .padding(
+                .trailing,
+                style.symbolAlignment == .trailing
+                ? -Spaces.value22
+                : DefaultValues.cgFloat
+            )
+            .clipped()
     }
 
     private func renderBody() -> some View {
         VStack(alignment: .leading, spacing: Spaces.value16) {
             renderTitle()
-            renderTextfield()
+            HStack {
+                renderSymbol()
+                    .padding(.leading, Spaces.value22)
+                    .setHidden(style.symbolAlignment != .leading, isRemove: true)
+                renderTextfield()
+                renderSymbol()
+                    .padding(.trailing, Spaces.value22)
+                    .setHidden(style.symbolAlignment != .trailing, isRemove: true)
+            }.frame(height: FrameSize.value82)
+            .overlay(
+                RoundedRectangle(cornerRadius: CornerRadiuses.value12)
+                    .stroke(
+                        Colors.Gray.light,
+                        lineWidth: 1
+                    )
+                    .shadow(color: Colors.Gray.light, radius: 2, x: 1, y: 2)
+                    .clipShape(RoundedRectangle(cornerRadius: CornerRadiuses.value12))
+            )
         }
     }
 }
