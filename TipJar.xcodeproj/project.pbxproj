@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6C51DC1A27B6176F00E54296 /* TipJarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC1927B6176F00E54296 /* TipJarApp.swift */; };
-		6C51DC1C27B6176F00E54296 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC1B27B6176F00E54296 /* ContentView.swift */; };
+		6C51DC1C27B6176F00E54296 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC1B27B6176F00E54296 /* MainScreen.swift */; };
 		6C51DC1E27B6177000E54296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC1D27B6177000E54296 /* Assets.xcassets */; };
 		6C51DC2127B6177000E54296 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC2027B6177000E54296 /* Preview Assets.xcassets */; };
 		6C51DC2B27B6177000E54296 /* TipJarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC2A27B6177000E54296 /* TipJarTests.swift */; };
 		6C51DC3527B6177000E54296 /* TipJarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC3427B6177000E54296 /* TipJarUITests.swift */; };
 		6C51DC3727B6177000E54296 /* TipJarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC3627B6177000E54296 /* TipJarUITestsLaunchTests.swift */; };
 		6C51DC4427B617DD00E54296 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC4327B617DD00E54296 /* README.md */; };
+		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
+		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
+		DAFE44BE27FC2A820050A44F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BD27FC2A820050A44F /* Colors.swift */; };
+		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
+		DAFE44C227FC2B7E0050A44F /* CornerRadiuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */; };
+		DAFE44C427FC2BBC0050A44F /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */; };
+		DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44C727FC2D140050A44F /* Symbols.swift */; };
+		DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44CC27FC31B40050A44F /* AmountInputView.swift */; };
+		DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44CE27FC59E50050A44F /* AmountInputViewModel.swift */; };
+		DAFE44D127FC5ADF0050A44F /* FrameHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44D027FC5ADF0050A44F /* FrameHeight.swift */; };
+		DAFE44D327FCCD1E0050A44F /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44D227FCCD1E0050A44F /* MainScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +48,7 @@
 /* Begin PBXFileReference section */
 		6C51DC1627B6176F00E54296 /* TipJar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipJar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C51DC1927B6176F00E54296 /* TipJarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarApp.swift; sourceTree = "<group>"; };
-		6C51DC1B27B6176F00E54296 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C51DC1B27B6176F00E54296 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		6C51DC1D27B6177000E54296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C51DC2027B6177000E54296 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C51DC2627B6177000E54296 /* TipJarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipJarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +57,18 @@
 		6C51DC3427B6177000E54296 /* TipJarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarUITests.swift; sourceTree = "<group>"; };
 		6C51DC3627B6177000E54296 /* TipJarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6C51DC4327B617DD00E54296 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DAFE44BD27FC2A820050A44F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = ../../../../../Desktop/Colors.swift; sourceTree = "<group>"; };
+		DAFE44BF27FC2B270050A44F /* Spaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaces.swift; sourceTree = "<group>"; };
+		DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiuses.swift; sourceTree = "<group>"; };
+		DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
+		DAFE44C727FC2D140050A44F /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		DAFE44CC27FC31B40050A44F /* AmountInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputView.swift; sourceTree = "<group>"; };
+		DAFE44CE27FC59E50050A44F /* AmountInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountInputViewModel.swift; sourceTree = "<group>"; };
+		DAFE44D027FC5ADF0050A44F /* FrameHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHeight.swift; sourceTree = "<group>"; };
+		DAFE44D227FCCD1E0050A44F /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +120,12 @@
 		6C51DC1827B6176F00E54296 /* TipJar */ = {
 			isa = PBXGroup;
 			children = (
+				DAFE44CA27FC31A30050A44F /* Components */,
+				DAFE44C527FC2CB20050A44F /* Screens */,
+				DAFE44BA27FC277B0050A44F /* Constants */,
+				DAFE44B527FC23850050A44F /* Info.plist */,
 				6C51DC1927B6176F00E54296 /* TipJarApp.swift */,
-				6C51DC1B27B6176F00E54296 /* ContentView.swift */,
-				6C51DC1D27B6177000E54296 /* Assets.xcassets */,
+				DAFE44B627FC25910050A44F /* Assets */,
 				6C51DC1F27B6177000E54296 /* Preview Content */,
 			);
 			path = TipJar;
@@ -128,6 +154,71 @@
 				6C51DC3627B6177000E54296 /* TipJarUITestsLaunchTests.swift */,
 			);
 			path = TipJarUITests;
+			sourceTree = "<group>";
+		};
+		DAFE44B627FC25910050A44F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44B727FC25A10050A44F /* Fonts */,
+				6C51DC1D27B6177000E54296 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DAFE44B727FC25A10050A44F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DAFE44BA27FC277B0050A44F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44BB27FC27860050A44F /* Fonts.swift */,
+				DAFE44BD27FC2A820050A44F /* Colors.swift */,
+				DAFE44BF27FC2B270050A44F /* Spaces.swift */,
+				DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */,
+				DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */,
+				DAFE44C727FC2D140050A44F /* Symbols.swift */,
+				DAFE44D027FC5ADF0050A44F /* FrameHeight.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DAFE44C527FC2CB20050A44F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44C627FC2CC10050A44F /* MainScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		DAFE44C627FC2CC10050A44F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6C51DC1B27B6176F00E54296 /* MainScreen.swift */,
+				DAFE44D227FCCD1E0050A44F /* MainScreenViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		DAFE44CA27FC31A30050A44F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44CB27FC31A70050A44F /* AmountInputView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DAFE44CB27FC31A70050A44F /* AmountInputView */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44CC27FC31B40050A44F /* AmountInputView.swift */,
+				DAFE44CE27FC59E50050A44F /* AmountInputViewModel.swift */,
+			);
+			path = AmountInputView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */,
 				6C51DC4427B617DD00E54296 /* README.md in Resources */,
 				6C51DC2127B6177000E54296 /* Preview Assets.xcassets in Resources */,
 				6C51DC1E27B6177000E54296 /* Assets.xcassets in Resources */,
@@ -261,7 +353,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C51DC1C27B6176F00E54296 /* ContentView.swift in Sources */,
+				6C51DC1C27B6176F00E54296 /* MainScreen.swift in Sources */,
+				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
+				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
+				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
+				DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */,
+				DAFE44D327FCCD1E0050A44F /* MainScreenViewModel.swift in Sources */,
+				DAFE44D127FC5ADF0050A44F /* FrameHeight.swift in Sources */,
+				DAFE44C227FC2B7E0050A44F /* CornerRadiuses.swift in Sources */,
+				DAFE44C427FC2BBC0050A44F /* DefaultValues.swift in Sources */,
+				DAFE44BE27FC2A820050A44F /* Colors.swift in Sources */,
+				DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */,
 				6C51DC1A27B6176F00E54296 /* TipJarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,11 +528,12 @@
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TipJar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,11 +558,12 @@
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TipJar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
