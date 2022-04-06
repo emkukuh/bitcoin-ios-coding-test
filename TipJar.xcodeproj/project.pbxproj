@@ -26,6 +26,7 @@
 		DA7A3D5B27FE0B32005DD933 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5A27FE0B32005DD933 /* CheckmarkView.swift */; };
 		DA7A3D5D27FE0D11005DD933 /* CheckmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5C27FE0D11005DD933 /* CheckmarkViewModel.swift */; };
 		DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5E27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift */; };
+		DA7A3D6127FE13ED005DD933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D6027FE13ED005DD933 /* AppDelegate.swift */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -97,6 +98,7 @@
 		DA7A3D5A27FE0B32005DD933 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		DA7A3D5C27FE0D11005DD933 /* CheckmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkViewModel.swift; sourceTree = "<group>"; };
 		DA7A3D5E27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumHorizontalListItemViewStyle.swift; sourceTree = "<group>"; };
+		DA7A3D6027FE13ED005DD933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				DAFE44B527FC23850050A44F /* Info.plist */,
 				DA7A3D4827FDFBBB005DD933 /* R.generated.swift */,
 				6C51DC1927B6176F00E54296 /* TipJarApp.swift */,
+				DA7A3D6027FE13ED005DD933 /* AppDelegate.swift */,
 				DAFE44B627FC25910050A44F /* Assets */,
 				DAFE44CA27FC31A30050A44F /* Components */,
 				DAFE44BA27FC277B0050A44F /* Constants */,
@@ -679,6 +682,7 @@
 				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
 				DAFE44FB27FD92140050A44F /* LinearGradients.swift in Sources */,
 				DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */,
+				DA7A3D6127FE13ED005DD933 /* AppDelegate.swift in Sources */,
 				DAFE44DA27FCD5750050A44F /* AmoutInputViewStyle.swift in Sources */,
 				DAFE44F927FD8FA00050A44F /* Colors.swift in Sources */,
 				DAFE44D327FCCD1E0050A44F /* MainScreenViewModel.swift in Sources */,

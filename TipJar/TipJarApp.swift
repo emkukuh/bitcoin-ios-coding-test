@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import IQKeyboardManagerSwift
 
 @main
 struct TipJarApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             MainScreen()
