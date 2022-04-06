@@ -14,6 +14,8 @@ class MainScreenViewModel: ObservableObject {
     var totalTipHorizontalListViewModel = HorizontalListItemViewModel()
     var personTipHorizontalListViewModel = HorizontalListItemViewModel()
     var store = Set<AnyCancellable>()
+    private let defaultTipPercentage: Double = 10
+    private let defaultPriceAmount: Double = 100
 
     init() {
         setupViewModel()
@@ -21,16 +23,14 @@ class MainScreenViewModel: ObservableObject {
     }
 
     func buttonTap() {
-        let singlePrice = priceAmountViewModel.value / stepperViewModel.value.doubleValue
-        print("tip", singlePrice * tipAmountViewModel.value / 100)
+       
     }
 
     private func setupViewModel() {
-        tipAmountViewModel.title = "% TIP"
-        totalTipHorizontalListViewModel.title = "totalaaa"
-//        totalTipHorizontalListViewModel.value = "totalaaa"
-        personTipHorizontalListViewModel.title = "peronnn"
-//        personTipHorizontalListViewModel.value = "peronnn"
+        tipAmountViewModel.title = R.string.title.tipPercentage()
+        tipAmountViewModel.value = defaultTipPercentage
+        totalTipHorizontalListViewModel.title = R.string.field.totalTip()
+        personTipHorizontalListViewModel.title = R.string.field.perPerson()
     }
 
     private func setupSubscription() {
@@ -38,9 +38,6 @@ class MainScreenViewModel: ObservableObject {
             .combineLatest(tipAmountViewModel.$value)
             .combineLatest(stepperViewModel.$value)
             .sink { (amount, person) in
-                print("price", amount.0)
-                print("tip", amount.1)
-                print("person", person)
                 self.calculateTipInfo(
                     price: amount.0,
                     personCount: person,
@@ -54,6 +51,10 @@ class MainScreenViewModel: ObservableObject {
         personCount: Int,
         tipPercentage: Double
     ) {
+        var price = price
+        if price == DefaultValues.double {
+            price = defaultPriceAmount
+        }
         let totalTip = price / personCount.doubleValue * tipPercentage / 100
         totalTipHorizontalListViewModel.value = totalTip.stringValue
         personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).stringValue

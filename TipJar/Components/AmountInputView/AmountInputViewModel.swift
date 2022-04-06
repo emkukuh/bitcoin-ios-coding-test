@@ -8,6 +8,6 @@
 import Foundation
 
 class AmountInputViewModel: ObservableObject {
-    var title: String = "Enter amount"
+    var title: String = R.string.title.enterAmount()
     @Published var value: Double = DefaultValues.double
 }

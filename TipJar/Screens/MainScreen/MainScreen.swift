@@ -47,7 +47,7 @@ struct MainScreen: View {
 
     private func renderMainButton() -> some View {
         Button(action: viewModel.buttonTap) {
-            Text("Save Payment")
+            Text(R.string.button.savePayment())
                 .font(Fonts.robotoMedium16)
                 .foregroundColor(.white)
                 .padding()

@@ -16,7 +16,7 @@ struct StepperView: View {
     }
 
     private func renderTitle() -> some View {
-        Text("How many people?")
+        Text(R.string.title.howManyPeople())
             .font(Fonts.robotoMedium16)
     }
 
@@ -48,14 +48,14 @@ struct StepperView: View {
             renderTitle()
             HStack {
                 renderButton(
-                    imageName: "minus",
+                    imageName: R.image.minus.name,
                     tapHandler: viewModel.decreaseValue
                 )
                 Spacer()
                 renderValue()
                 Spacer()
                 renderButton(
-                    imageName: "plus",
+                    imageName: R.image.plus.name,
                     tapHandler: viewModel.increaseValue
                 )
             }

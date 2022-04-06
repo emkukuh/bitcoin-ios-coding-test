@@ -34,7 +34,12 @@ struct AmountInputView: View {
     private func renderTextfield() -> some View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        return TextField("100.00", value: $viewModel.value, formatter: formatter)
+        formatter.zeroSymbol = DefaultValues.string
+        return TextField(
+            R.string.placeholder.amount100(),
+            value: $viewModel.value,
+            formatter: formatter
+        )
             .font(Fonts.robotoMedium42)
             .keyboardType(.decimalPad)
             .multilineTextAlignment(.center)
@@ -52,7 +57,7 @@ struct AmountInputView: View {
             )
             .clipped()
     }
-
+    
     private func renderBody() -> some View {
         VStack(alignment: .leading, spacing: Spaces.value16) {
             renderTitle()

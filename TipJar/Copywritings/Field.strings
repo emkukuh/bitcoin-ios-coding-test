@@ -1,0 +1,9 @@
+/* 
+  Field.strings
+  TipJar
+
+  Created by kukuh on 06/04/22.
+  
+*/
+"total.tip" = "Total Tip";
+"per.person" = "Per Person";

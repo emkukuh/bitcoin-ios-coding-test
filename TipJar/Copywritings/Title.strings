@@ -1,0 +1,11 @@
+/* 
+  Title.strings
+  TipJar
+
+  Created by kukuh on 06/04/22.
+  
+*/
+"saved.payments" = "Saved Payments";
+"enter.amount" = "Enter Amount";
+"how.many.people" = "How many people?";
+"tip.percentage" = "% TIP";

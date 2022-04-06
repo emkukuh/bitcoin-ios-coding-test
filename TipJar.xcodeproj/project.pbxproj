@@ -17,6 +17,11 @@
 		6C51DC3727B6177000E54296 /* TipJarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC3627B6177000E54296 /* TipJarUITestsLaunchTests.swift */; };
 		6C51DC4427B617DD00E54296 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC4327B617DD00E54296 /* README.md */; };
 		ACFF2547DA9D049DCA0A42E6 /* Pods_TipJar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD683361B7F684B37E1E762C /* Pods_TipJar.framework */; };
+		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
+		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
+		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
+		DA7A3D5327FDFCA9005DD933 /* Field.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D5227FDFCA9005DD933 /* Field.strings */; };
+		DA7A3D5527FDFDC2005DD933 /* Button.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D5427FDFDC2005DD933 /* Button.strings */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -79,6 +84,11 @@
 		70F4D91C93FE8913824257C8 /* Pods-TipJar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipJar.debug.xcconfig"; path = "Target Support Files/Pods-TipJar/Pods-TipJar.debug.xcconfig"; sourceTree = "<group>"; };
 		AF56281BA049498BA8217E31 /* Pods_TipJar_TipJarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar_TipJarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD683361B7F684B37E1E762C /* Pods_TipJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
+		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
+		DA7A3D5227FDFCA9005DD933 /* Field.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Field.strings; sourceTree = "<group>"; };
+		DA7A3D5427FDFDC2005DD933 /* Button.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Button.strings; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -171,15 +181,16 @@
 		6C51DC1827B6176F00E54296 /* TipJar */ = {
 			isa = PBXGroup;
 			children = (
-				DAFE44DF27FCD6800050A44F /* Utils */,
-				DAFE44D427FCD24E0050A44F /* Copywritings */,
-				DAFE44CA27FC31A30050A44F /* Components */,
-				DAFE44C527FC2CB20050A44F /* Screens */,
-				DAFE44BA27FC277B0050A44F /* Constants */,
 				DAFE44B527FC23850050A44F /* Info.plist */,
+				DA7A3D4827FDFBBB005DD933 /* R.generated.swift */,
 				6C51DC1927B6176F00E54296 /* TipJarApp.swift */,
 				DAFE44B627FC25910050A44F /* Assets */,
+				DAFE44CA27FC31A30050A44F /* Components */,
+				DAFE44BA27FC277B0050A44F /* Constants */,
+				DAFE44D427FCD24E0050A44F /* Copywritings */,
 				6C51DC1F27B6177000E54296 /* Preview Content */,
+				DAFE44C527FC2CB20050A44F /* Screens */,
+				DAFE44DF27FCD6800050A44F /* Utils */,
 			);
 			path = TipJar;
 			sourceTree = "<group>";
@@ -294,6 +305,10 @@
 		DAFE44D427FCD24E0050A44F /* Copywritings */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */,
+				DA7A3D5427FDFDC2005DD933 /* Button.strings */,
+				DA7A3D5227FDFCA9005DD933 /* Field.strings */,
+				DA7A3D4E27FDFC4B005DD933 /* Title.strings */,
 			);
 			path = Copywritings;
 			sourceTree = "<group>";
@@ -463,6 +478,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */,
+				DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */,
+				DA7A3D5527FDFDC2005DD933 /* Button.strings in Resources */,
+				DA7A3D5327FDFCA9005DD933 /* Field.strings in Resources */,
 				DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */,
 				6C51DC4427B617DD00E54296 /* README.md in Resources */,
 				6C51DC2127B6177000E54296 /* Preview Assets.xcassets in Resources */,
@@ -616,6 +635,7 @@
 			files = (
 				6C51DC1C27B6176F00E54296 /* MainScreen.swift in Sources */,
 				DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */,
+				DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */,
 				DAFE44D727FCD2900050A44F /* StepperView.swift in Sources */,
 				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
