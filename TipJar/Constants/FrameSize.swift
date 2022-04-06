@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct FrameSize {
+    static let value30: CGFloat = 30
     static let value70: CGFloat = 70
     static let value82: CGFloat = 82
 }

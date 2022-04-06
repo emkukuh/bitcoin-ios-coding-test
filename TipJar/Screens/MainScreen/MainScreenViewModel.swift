@@ -13,7 +13,8 @@ class MainScreenViewModel: ObservableObject {
     var stepperViewModel = StepperViewModel()
     var totalTipHorizontalListViewModel = HorizontalListItemViewModel()
     var personTipHorizontalListViewModel = HorizontalListItemViewModel()
-    var store = Set<AnyCancellable>()
+    var takeRecieptPicCheckmarkViewModel = CheckmarkViewModel()
+    private var store = Set<AnyCancellable>()
     private let defaultTipPercentage: Double = 10
     private let defaultPriceAmount: Double = 100
 
@@ -28,6 +29,7 @@ class MainScreenViewModel: ObservableObject {
 
     private func setupViewModel() {
         tipAmountViewModel.title = R.string.title.tipPercentage()
+        tipAmountViewModel.placeHolder = R.string.placeholder.amount10()
         tipAmountViewModel.value = defaultTipPercentage
         totalTipHorizontalListViewModel.title = R.string.field.totalTip()
         personTipHorizontalListViewModel.title = R.string.field.perPerson()

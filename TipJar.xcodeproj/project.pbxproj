@@ -22,6 +22,10 @@
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
 		DA7A3D5327FDFCA9005DD933 /* Field.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D5227FDFCA9005DD933 /* Field.strings */; };
 		DA7A3D5527FDFDC2005DD933 /* Button.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D5427FDFDC2005DD933 /* Button.strings */; };
+		DA7A3D5827FE09E2005DD933 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5727FE09E2005DD933 /* NavigationBarView.swift */; };
+		DA7A3D5B27FE0B32005DD933 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5A27FE0B32005DD933 /* CheckmarkView.swift */; };
+		DA7A3D5D27FE0D11005DD933 /* CheckmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5C27FE0D11005DD933 /* CheckmarkViewModel.swift */; };
+		DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D5E27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -89,6 +93,10 @@
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
 		DA7A3D5227FDFCA9005DD933 /* Field.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Field.strings; sourceTree = "<group>"; };
 		DA7A3D5427FDFDC2005DD933 /* Button.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Button.strings; sourceTree = "<group>"; };
+		DA7A3D5727FE09E2005DD933 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		DA7A3D5A27FE0B32005DD933 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
+		DA7A3D5C27FE0D11005DD933 /* CheckmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkViewModel.swift; sourceTree = "<group>"; };
+		DA7A3D5E27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumHorizontalListItemViewStyle.swift; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -233,6 +241,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA7A3D5627FE09D7005DD933 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3D5727FE09E2005DD933 /* NavigationBarView.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		DA7A3D5927FE0B25005DD933 /* CheckmarkView */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3D5A27FE0B32005DD933 /* CheckmarkView.swift */,
+				DA7A3D5C27FE0D11005DD933 /* CheckmarkViewModel.swift */,
+			);
+			path = CheckmarkView;
+			sourceTree = "<group>";
+		};
 		DAFE44B627FC25910050A44F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +310,8 @@
 		DAFE44CA27FC31A30050A44F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3D5927FE0B25005DD933 /* CheckmarkView */,
+				DA7A3D5627FE09D7005DD933 /* NavigationBar */,
 				DAFE44EA27FD8D460050A44F /* HorizontalListItemView */,
 				DAFE44D527FCD2830050A44F /* StepperView */,
 				DAFE44CB27FC31A70050A44F /* AmountInputView */,
@@ -364,6 +391,7 @@
 			children = (
 				DAFE44F627FD8F730050A44F /* HorizontalListItemViewStyle.swift */,
 				DAFE44F227FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift */,
+				DA7A3D5E27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -637,12 +665,16 @@
 				DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */,
 				DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */,
 				DAFE44D727FCD2900050A44F /* StepperView.swift in Sources */,
+				DA7A3D5D27FE0D11005DD933 /* CheckmarkViewModel.swift in Sources */,
 				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
+				DA7A3D5827FE09E2005DD933 /* NavigationBarView.swift in Sources */,
 				DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */,
 				DAFE44DC27FCD5FC0050A44F /* MainAmountInputViewStyle.swift in Sources */,
 				DAFE44DE27FCD6240050A44F /* TipAmountInputViewStyle.swift in Sources */,
+				DA7A3D5B27FE0B32005DD933 /* CheckmarkView.swift in Sources */,
 				DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */,
+				DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */,
 				DAFE44E627FCEC970050A44F /* Numbers+Extension.swift in Sources */,
 				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
 				DAFE44FB27FD92140050A44F /* LinearGradients.swift in Sources */,

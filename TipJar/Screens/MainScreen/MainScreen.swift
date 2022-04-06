@@ -28,13 +28,15 @@ struct MainScreen: View {
 
     private func renderTotalTip() -> some View {
         HorizontalListItemView(
-            viewModel: viewModel.totalTipHorizontalListViewModel
+            viewModel: viewModel.totalTipHorizontalListViewModel,
+            style: SmallHorizontalListItemViewStyle()
         )
     }
 
     private func renderPersonTip() -> some View {
         HorizontalListItemView(
-            viewModel: viewModel.totalTipHorizontalListViewModel
+            viewModel: viewModel.personTipHorizontalListViewModel,
+            style: MediumHorizontalListItemViewStyle()
         )
     }
 
@@ -43,6 +45,12 @@ struct MainScreen: View {
             renderTotalTip()
             renderPersonTip()
         }
+    }
+
+    private func renderRecieptPicCheckmark() -> some View {
+        CheckmarkView(
+            viewModel: viewModel.takeRecieptPicCheckmarkViewModel
+        )
     }
 
     private func renderMainButton() -> some View {
@@ -59,11 +67,12 @@ struct MainScreen: View {
 
     private func renderBody() -> some View {
         ScrollView {
-            VStack(spacing: Spaces.value32) {
+            VStack(alignment: .leading, spacing: Spaces.value32) {
                 renderPriceAmountInputView()
                 renderStepperView()
                 renderTipAmountInputView()
                 renderTipInfoList()
+                renderRecieptPicCheckmark()
                 renderMainButton()
                 Spacer()
             }

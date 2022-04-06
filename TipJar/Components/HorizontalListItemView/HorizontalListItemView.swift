@@ -12,18 +12,22 @@ struct HorizontalListItemView: View {
     var style: HorizontalListItemViewStyle = SmallHorizontalListItemViewStyle()
     var body: some View { renderBody() }
 
-    init(viewModel: HorizontalListItemViewModel) {
+    init(
+        viewModel: HorizontalListItemViewModel,
+        style: HorizontalListItemViewStyle
+    ) {
         self.viewModel = viewModel
+        self.style = style
     }
 
     private func renderTitle() -> some View {
         Text(viewModel.title)
-            .font(Fonts.robotoMedium16)
+            .font(style.titleFont)
     }
 
     private func renderValue() -> some View {
         Text(viewModel.value)
-            .font(Fonts.robotoMedium16)
+            .font(style.valueFont)
     }
 
     private func renderBody() -> some View {
@@ -32,11 +36,5 @@ struct HorizontalListItemView: View {
             Spacer()
             renderValue()
         }
-    }
-}
-
-struct HorizontalListItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        HorizontalListItemView(viewModel: HorizontalListItemViewModel())
     }
 }

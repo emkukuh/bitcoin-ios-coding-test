@@ -35,8 +35,9 @@ struct AmountInputView: View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.zeroSymbol = DefaultValues.string
+        formatter.minimumSignificantDigits = 0
         return TextField(
-            R.string.placeholder.amount100(),
+            viewModel.placeHolder,
             value: $viewModel.value,
             formatter: formatter
         )
