@@ -22,7 +22,7 @@ struct AmountInputView: View {
     }
 
     private func renderTitle() -> some View {
-        Text("Enter Amount")
+        Text(viewModel.title)
             .font(Fonts.robotoMedium16)
     }
 
@@ -41,13 +41,13 @@ struct AmountInputView: View {
             .padding(
                 .leading,
                 style.symbolAlignment == .leading
-                ? -Spaces.value22
+                ? -Spaces.value10
                 : DefaultValues.cgFloat
             )
             .padding(
                 .trailing,
                 style.symbolAlignment == .trailing
-                ? -Spaces.value22
+                ? -Spaces.value10
                 : DefaultValues.cgFloat
             )
             .clipped()
@@ -58,13 +58,15 @@ struct AmountInputView: View {
             renderTitle()
             HStack {
                 renderSymbol()
-                    .padding(.leading, Spaces.value22)
+                    .padding(.leading, Spaces.value10)
                     .setHidden(style.symbolAlignment != .leading, isRemove: true)
                 renderTextfield()
                 renderSymbol()
-                    .padding(.trailing, Spaces.value22)
+                    .padding(.trailing, Spaces.value10)
                     .setHidden(style.symbolAlignment != .trailing, isRemove: true)
-            }.frame(height: FrameSize.value82)
+            }
+            .frame(height: FrameSize.value82)
+            .padding(.horizontal, 12)
             .overlay(
                 RoundedRectangle(cornerRadius: CornerRadiuses.value12)
                     .stroke(

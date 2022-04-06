@@ -62,9 +62,3 @@ struct StepperView: View {
         }
     }
 }
-
-struct StepperView_Previews: PreviewProvider {
-    static var previews: some View {
-        StepperView(viewModel: StepperViewModel())
-    }
-}

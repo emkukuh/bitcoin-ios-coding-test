@@ -26,18 +26,50 @@ struct MainScreen: View {
         StepperView(viewModel: viewModel.stepperViewModel)
     }
 
-    private func renderBody() -> some View {
-        VStack(spacing: Spaces.value32) {
-            renderPriceAmountInputView()
-            renderStepperView()
-            renderTipAmountInputView()
-            Button(action: viewModel.buttonTap) {
-                Text("tap")
-            }
-            Spacer()
+    private func renderTotalTip() -> some View {
+        HorizontalListItemView(
+            viewModel: viewModel.totalTipHorizontalListViewModel
+        )
+    }
+
+    private func renderPersonTip() -> some View {
+        HorizontalListItemView(
+            viewModel: viewModel.totalTipHorizontalListViewModel
+        )
+    }
+
+    private func renderTipInfoList() -> some View {
+        VStack(spacing: Spaces.value16) {
+            renderTotalTip()
+            renderPersonTip()
         }
-        .padding([.leading, .trailing], Spaces.value24)
-        .padding(.top, Spaces.value16)
+    }
+
+    private func renderMainButton() -> some View {
+        Button(action: viewModel.buttonTap) {
+            Text("Save Payment")
+                .font(Fonts.robotoMedium16)
+                .foregroundColor(.white)
+                .padding()
+                .frame(minWidth: DefaultValues.cgFloat, maxWidth: .infinity)
+                .background(LinearGradients.Orange.vertical)
+                .cornerRadius(CornerRadiuses.value12)
+        }
+    }
+
+    private func renderBody() -> some View {
+        ScrollView {
+            VStack(spacing: Spaces.value32) {
+                renderPriceAmountInputView()
+                renderStepperView()
+                renderTipAmountInputView()
+                renderTipInfoList()
+                renderMainButton()
+                Spacer()
+            }
+            .padding([.leading, .trailing], Spaces.value24)
+            .padding(.top, Spaces.value16)
+        }
     }
 }
 

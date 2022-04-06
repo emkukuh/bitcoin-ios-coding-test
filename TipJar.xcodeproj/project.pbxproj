@@ -17,7 +17,6 @@
 		6C51DC4427B617DD00E54296 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC4327B617DD00E54296 /* README.md */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
-		DAFE44BE27FC2A820050A44F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BD27FC2A820050A44F /* Colors.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
 		DAFE44C227FC2B7E0050A44F /* CornerRadiuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */; };
 		DAFE44C427FC2BBC0050A44F /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */; };
@@ -33,6 +32,12 @@
 		DAFE44E227FCD6920050A44F /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44E127FCD6920050A44F /* View+Hidden.swift */; };
 		DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44E327FCEBC90050A44F /* StepperViewModel.swift */; };
 		DAFE44E627FCEC970050A44F /* Numbers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44E527FCEC970050A44F /* Numbers+Extension.swift */; };
+		DAFE44EC27FD8D600050A44F /* HorizontalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44EB27FD8D600050A44F /* HorizontalListItemView.swift */; };
+		DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44ED27FD8E490050A44F /* HorizontalListItemViewModel.swift */; };
+		DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44F227FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift */; };
+		DAFE44F727FD8F730050A44F /* HorizontalListItemViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44F627FD8F730050A44F /* HorizontalListItemViewStyle.swift */; };
+		DAFE44F927FD8FA00050A44F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44F827FD8FA00050A44F /* Colors.swift */; };
+		DAFE44FB27FD92140050A44F /* LinearGradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44FA27FD92140050A44F /* LinearGradients.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +72,6 @@
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		DAFE44BD27FC2A820050A44F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = ../../../../../Desktop/Colors.swift; sourceTree = "<group>"; };
 		DAFE44BF27FC2B270050A44F /* Spaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spaces.swift; sourceTree = "<group>"; };
 		DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiuses.swift; sourceTree = "<group>"; };
 		DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
@@ -83,6 +87,12 @@
 		DAFE44E127FCD6920050A44F /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
 		DAFE44E327FCEBC90050A44F /* StepperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewModel.swift; sourceTree = "<group>"; };
 		DAFE44E527FCEC970050A44F /* Numbers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numbers+Extension.swift"; sourceTree = "<group>"; };
+		DAFE44EB27FD8D600050A44F /* HorizontalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListItemView.swift; sourceTree = "<group>"; };
+		DAFE44ED27FD8E490050A44F /* HorizontalListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListItemViewModel.swift; sourceTree = "<group>"; };
+		DAFE44F227FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallHorizontalListItemViewStyle.swift; sourceTree = "<group>"; };
+		DAFE44F627FD8F730050A44F /* HorizontalListItemViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalListItemViewStyle.swift; sourceTree = "<group>"; };
+		DAFE44F827FD8FA00050A44F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DAFE44FA27FD92140050A44F /* LinearGradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradients.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +202,9 @@
 		DAFE44BA27FC277B0050A44F /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				DAFE44F827FD8FA00050A44F /* Colors.swift */,
+				DAFE44FA27FD92140050A44F /* LinearGradients.swift */,
 				DAFE44BB27FC27860050A44F /* Fonts.swift */,
-				DAFE44BD27FC2A820050A44F /* Colors.swift */,
 				DAFE44BF27FC2B270050A44F /* Spaces.swift */,
 				DAFE44C127FC2B7E0050A44F /* CornerRadiuses.swift */,
 				DAFE44C327FC2BBC0050A44F /* DefaultValues.swift */,
@@ -223,6 +234,7 @@
 		DAFE44CA27FC31A30050A44F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DAFE44EA27FD8D460050A44F /* HorizontalListItemView */,
 				DAFE44D527FCD2830050A44F /* StepperView */,
 				DAFE44CB27FC31A70050A44F /* AmountInputView */,
 			);
@@ -280,6 +292,25 @@
 				DAFE44E527FCEC970050A44F /* Numbers+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAFE44EA27FD8D460050A44F /* HorizontalListItemView */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44EF27FD8EEA0050A44F /* Styles */,
+				DAFE44EB27FD8D600050A44F /* HorizontalListItemView.swift */,
+				DAFE44ED27FD8E490050A44F /* HorizontalListItemViewModel.swift */,
+			);
+			path = HorizontalListItemView;
+			sourceTree = "<group>";
+		};
+		DAFE44EF27FD8EEA0050A44F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE44F627FD8F730050A44F /* HorizontalListItemViewStyle.swift */,
+				DAFE44F227FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,21 +446,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C51DC1C27B6176F00E54296 /* MainScreen.swift in Sources */,
+				DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */,
 				DAFE44D727FCD2900050A44F /* StepperView.swift in Sources */,
 				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
 				DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */,
 				DAFE44DC27FCD5FC0050A44F /* MainAmountInputViewStyle.swift in Sources */,
 				DAFE44DE27FCD6240050A44F /* TipAmountInputViewStyle.swift in Sources */,
+				DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */,
 				DAFE44E627FCEC970050A44F /* Numbers+Extension.swift in Sources */,
 				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
+				DAFE44FB27FD92140050A44F /* LinearGradients.swift in Sources */,
 				DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */,
 				DAFE44DA27FCD5750050A44F /* AmoutInputViewStyle.swift in Sources */,
+				DAFE44F927FD8FA00050A44F /* Colors.swift in Sources */,
 				DAFE44D327FCCD1E0050A44F /* MainScreenViewModel.swift in Sources */,
 				DAFE44D127FC5ADF0050A44F /* FrameSize.swift in Sources */,
 				DAFE44C227FC2B7E0050A44F /* CornerRadiuses.swift in Sources */,
 				DAFE44C427FC2BBC0050A44F /* DefaultValues.swift in Sources */,
-				DAFE44BE27FC2A820050A44F /* Colors.swift in Sources */,
+				DAFE44F727FD8F730050A44F /* HorizontalListItemViewStyle.swift in Sources */,
+				DAFE44EC27FD8D600050A44F /* HorizontalListItemView.swift in Sources */,
 				DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */,
 				6C51DC1A27B6176F00E54296 /* TipJarApp.swift in Sources */,
 				DAFE44E227FCD6920050A44F /* View+Hidden.swift in Sources */,
