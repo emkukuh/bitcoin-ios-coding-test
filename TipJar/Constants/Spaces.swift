@@ -14,4 +14,5 @@ struct Spaces {
     static let value22: CGFloat = 22
     static let value24: CGFloat = 24
     static let value32: CGFloat = 32
+    static let value42: CGFloat = 42
 }

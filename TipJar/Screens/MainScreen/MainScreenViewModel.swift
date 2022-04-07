@@ -7,7 +7,7 @@
 
 import Combine
 
-class MainScreenViewModel: ObservableObject {
+class MainScreenViewModel: ScreenViewModel {
     var priceAmountViewModel = AmountInputViewModel()
     var tipAmountViewModel = AmountInputViewModel()
     var stepperViewModel = StepperViewModel()
@@ -18,7 +18,8 @@ class MainScreenViewModel: ObservableObject {
     private let defaultTipPercentage: Double = 10
     private let defaultPriceAmount: Double = 100
 
-    init() {
+    override init() {
+        super.init()
         setupViewModel()
         setupSubscription()
     }
@@ -57,8 +58,8 @@ class MainScreenViewModel: ObservableObject {
         if price == DefaultValues.double {
             price = defaultPriceAmount
         }
-        let totalTip = price / personCount.doubleValue * tipPercentage / 100
-        totalTipHorizontalListViewModel.value = totalTip.stringValue
-        personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).stringValue
+        let totalTip = price * tipPercentage / 100
+        totalTipHorizontalListViewModel.value = totalTip.amountStringFormat
+        personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).amountStringFormat
     }
 }

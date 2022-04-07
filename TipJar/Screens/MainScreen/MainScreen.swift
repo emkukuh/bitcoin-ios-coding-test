@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct MainScreen: View {
-    @ObservedObject var viewModel = MainScreenViewModel()
+struct MainScreen: ScreenContent {
+    @ObservedObject var viewModel: MainScreenViewModel
     var body: some View { renderBody() }
 
     private func renderPriceAmountInputView() -> some View {
@@ -50,7 +50,7 @@ struct MainScreen: View {
     private func renderRecieptPicCheckmark() -> some View {
         CheckmarkView(
             viewModel: viewModel.takeRecieptPicCheckmarkViewModel
-        )
+        ).padding(.top, Spaces.value42)
     }
 
     private func renderMainButton() -> some View {
@@ -84,6 +84,6 @@ struct MainScreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainScreen()
+        MainScreen(viewModel: MainScreenViewModel())
     }
 }

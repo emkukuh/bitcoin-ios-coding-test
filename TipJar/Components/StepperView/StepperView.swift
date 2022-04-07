@@ -48,15 +48,15 @@ struct StepperView: View {
             renderTitle()
             HStack {
                 renderButton(
-                    imageName: R.image.minus.name,
-                    tapHandler: viewModel.decreaseValue
+                    imageName: R.image.plus.name,
+                    tapHandler: viewModel.increaseValue
                 )
                 Spacer()
                 renderValue()
                 Spacer()
                 renderButton(
-                    imageName: R.image.plus.name,
-                    tapHandler: viewModel.increaseValue
+                    imageName: R.image.minus.name,
+                    tapHandler: viewModel.decreaseValue
                 )
             }
         }
