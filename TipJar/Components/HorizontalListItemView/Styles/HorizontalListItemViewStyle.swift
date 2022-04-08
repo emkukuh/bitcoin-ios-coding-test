@@ -10,5 +10,6 @@ import SwiftUI
 
 protocol HorizontalListItemViewStyle {
     var titleFont: Font { get }
+    var subtitleFont: Font { get }
     var valueFont: Font { get }
 }

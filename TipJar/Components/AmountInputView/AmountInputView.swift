@@ -71,7 +71,7 @@ struct AmountInputView: View {
                     .padding(.trailing, Spaces.value10)
                     .setHidden(style.symbolAlignment != .trailing, isRemove: true)
             }
-            .frame(height: FrameSize.value82)
+            .frame(height: FrameSizes.value82)
             .padding(.horizontal, 12)
             .overlay(
                 RoundedRectangle(cornerRadius: CornerRadiuses.value12)

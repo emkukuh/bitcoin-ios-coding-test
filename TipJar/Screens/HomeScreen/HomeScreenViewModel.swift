@@ -1,5 +1,5 @@
 //
-//  MainScreenViewModel.swift
+//  HomeScreenViewModel.swift
 //  TipJar
 //
 //  Created by kukuh on 06/04/22.
@@ -7,13 +7,14 @@
 
 import Combine
 
-class MainScreenViewModel: ScreenViewModel {
+class HomeScreenViewModel: ScreenViewModel {
     var priceAmountViewModel = AmountInputViewModel()
     var tipAmountViewModel = AmountInputViewModel()
     var stepperViewModel = StepperViewModel()
     var totalTipHorizontalListViewModel = HorizontalListItemViewModel()
     var personTipHorizontalListViewModel = HorizontalListItemViewModel()
     var takeRecieptPicCheckmarkViewModel = CheckmarkViewModel()
+    var mainButtonViewMdoel = ButtonViewModel()
     private var store = Set<AnyCancellable>()
     private let defaultTipPercentage: Double = 10
     private let defaultPriceAmount: Double = 100
@@ -25,7 +26,7 @@ class MainScreenViewModel: ScreenViewModel {
     }
 
     func buttonTap() {
-       
+       print("snoop doog")
     }
 
     private func setupViewModel() {
@@ -34,6 +35,8 @@ class MainScreenViewModel: ScreenViewModel {
         tipAmountViewModel.value = defaultTipPercentage
         totalTipHorizontalListViewModel.title = R.string.field.totalTip()
         personTipHorizontalListViewModel.title = R.string.field.perPerson()
+        mainButtonViewMdoel.title = R.string.button.savePayment()
+        mainButtonViewMdoel.onTapHandler = buttonTap
     }
 
     private func setupSubscription() {

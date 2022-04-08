@@ -28,8 +28,8 @@ struct CheckmarkView: View {
                 RoundedRectangle(cornerRadius: CornerRadiuses.value6)
             )
             .frame(
-                width: FrameSize.value30,
-                height: FrameSize.value30
+                width: FrameSizes.value30,
+                height: FrameSizes.value30
             )
             .overlay(
                 RoundedRectangle(cornerRadius: CornerRadiuses.value12)

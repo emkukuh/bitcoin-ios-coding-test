@@ -12,15 +12,16 @@ struct NavigationBarView: View {
 
     private func renderBody() -> some View {
         ZStack {
-            Color.blue
-                .background(.ultraThinMaterial)
-            Text("title")
-                .font(.largeTitle.weight(.bold))
-                .frame(maxWidth: .infinity, alignment: .center)
-                .padding()
+            VStack {
+                Image(R.image.tipJarLogo.name)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(alignment: .center)
+                    .padding(.top, Spaces.value10)
+            }
         }
-        .frame(height: 70)
+        .frame(height: FrameSizes.value42)
         .frame(maxHeight: .infinity, alignment: .top)
+        .padding(.horizontal, Spaces.value100)
     }
 }
 

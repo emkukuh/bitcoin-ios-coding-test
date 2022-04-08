@@ -1,14 +1,14 @@
 //
-//  MainScreen.swift
+//  HomeScreen.swift
 //  TipJar
 //
-//  Created by Jumpei Katayama on 2022/02/11.
+//  Created by kukuh on 08/04/22.
 //
 
 import SwiftUI
 
-struct MainScreen: ScreenContent {
-    @ObservedObject var viewModel: MainScreenViewModel
+struct HomeScreen: ScreenContent {
+    @ObservedObject var viewModel: HomeScreenViewModel
     var body: some View { renderBody() }
 
     private func renderPriceAmountInputView() -> some View {
@@ -54,15 +54,7 @@ struct MainScreen: ScreenContent {
     }
 
     private func renderMainButton() -> some View {
-        Button(action: viewModel.buttonTap) {
-            Text(R.string.button.savePayment())
-                .font(Fonts.robotoMedium16)
-                .foregroundColor(.white)
-                .padding()
-                .frame(minWidth: DefaultValues.cgFloat, maxWidth: .infinity)
-                .background(LinearGradients.Orange.vertical)
-                .cornerRadius(CornerRadiuses.value12)
-        }
+        ButtonView(viewModel: viewModel.mainButtonViewMdoel)
     }
 
     private func renderBody() -> some View {
@@ -79,11 +71,5 @@ struct MainScreen: ScreenContent {
             .padding([.leading, .trailing], Spaces.value24)
             .padding(.top, Spaces.value16)
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainScreen(viewModel: MainScreenViewModel())
     }
 }

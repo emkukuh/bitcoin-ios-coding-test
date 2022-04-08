@@ -14,7 +14,7 @@ struct HorizontalListItemView: View {
 
     init(
         viewModel: HorizontalListItemViewModel,
-        style: HorizontalListItemViewStyle
+        style: HorizontalListItemViewStyle = SmallHorizontalListItemViewStyle()
     ) {
         self.viewModel = viewModel
         self.style = style

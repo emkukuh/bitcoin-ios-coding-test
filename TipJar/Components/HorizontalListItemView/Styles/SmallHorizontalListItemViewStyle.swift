@@ -9,5 +9,6 @@ import SwiftUI
 
 class SmallHorizontalListItemViewStyle: HorizontalListItemViewStyle {
     var titleFont: Font = Fonts.robotoMedium16
+    var subtitleFont: Font = Fonts.robotoMedium16
     var valueFont: Font = Fonts.robotoMedium16
 }

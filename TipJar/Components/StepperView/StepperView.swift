@@ -27,7 +27,7 @@ struct StepperView: View {
         Button(action: tapHandler) {
             Image(imageName)
                 .padding()
-                .frame(width: FrameSize.value70, height: FrameSize.value70)
+                .frame(width: FrameSizes.value70, height: FrameSizes.value70)
                 .clipShape(Circle())
                 .overlay(
                     Circle().stroke(

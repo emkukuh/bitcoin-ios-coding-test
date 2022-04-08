@@ -6,5 +6,4 @@
 //
 
 import SwiftUI
-
 class ScreenViewModel: ObservableObject {}
