@@ -13,10 +13,16 @@ struct Data: Identifiable {
 }
 
 class PaymentHistoryScreenViewModel: ScreenViewModel {
-    var datas: [Data] = [
-        Data(name: "abc"),
-        Data(name: "def"),
-        Data(name: "hij"),
-        Data(name: "klm"),
-    ]
+    var paymentHistoryItemViewModels = [PaymentHistoryListItemViewModel]()
+
+    override init() {
+        super.init()
+        for i in 0...10 {
+            let item = PaymentHistoryListItemViewModel()
+            item.title = "title \(i)"
+            item.date = "date \(i)"
+            item.tip = "tip \(i)"
+            paymentHistoryItemViewModels.append(item)
+        }
+    }
 }

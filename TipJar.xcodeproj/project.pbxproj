@@ -42,6 +42,8 @@
 		DA7A3D872800A3B7005DD933 /* PaymentHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D862800A3B7005DD933 /* PaymentHistoryScreen.swift */; };
 		DA7A3D892800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D882800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift */; };
 		DA7A3D8B2800A5F8005DD933 /* PaymentHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D8A2800A5F8005DD933 /* PaymentHistoryCoordinator.swift */; };
+		DA7A3D8F2800E035005DD933 /* PaymentHistoryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D8E2800E035005DD933 /* PaymentHistoryListItemView.swift */; };
+		DA7A3D912800E03A005DD933 /* PaymentHistoryListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D902800E03A005DD933 /* PaymentHistoryListItemViewModel.swift */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -129,6 +131,8 @@
 		DA7A3D862800A3B7005DD933 /* PaymentHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentHistoryScreen.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/PaymentHistoryScreen.swift"; sourceTree = "<group>"; };
 		DA7A3D882800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryScreenViewModel.swift; sourceTree = "<group>"; };
 		DA7A3D8A2800A5F8005DD933 /* PaymentHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCoordinator.swift; sourceTree = "<group>"; };
+		DA7A3D8E2800E035005DD933 /* PaymentHistoryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryListItemView.swift; sourceTree = "<group>"; };
+		DA7A3D902800E03A005DD933 /* PaymentHistoryListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryListItemViewModel.swift; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -341,6 +345,24 @@
 			path = PaymentHistoryScreen;
 			sourceTree = "<group>";
 		};
+		DA7A3D8C2800E018005DD933 /* ListItemViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3D8D2800E020005DD933 /* PaymentHistoryListItemView */,
+				DAFE44EA27FD8D460050A44F /* HorizontalListItemView */,
+			);
+			path = ListItemViews;
+			sourceTree = "<group>";
+		};
+		DA7A3D8D2800E020005DD933 /* PaymentHistoryListItemView */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3D8E2800E035005DD933 /* PaymentHistoryListItemView.swift */,
+				DA7A3D902800E03A005DD933 /* PaymentHistoryListItemViewModel.swift */,
+			);
+			path = PaymentHistoryListItemView;
+			sourceTree = "<group>";
+		};
 		DAFE44B627FC25910050A44F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,10 +408,10 @@
 		DAFE44CA27FC31A30050A44F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3D8C2800E018005DD933 /* ListItemViews */,
 				DA7A3D74280028C9005DD933 /* ButtonView */,
 				DA7A3D5927FE0B25005DD933 /* CheckmarkView */,
 				DA7A3D5627FE09D7005DD933 /* NavigationBar */,
-				DAFE44EA27FD8D460050A44F /* HorizontalListItemView */,
 				DAFE44D527FCD2830050A44F /* StepperView */,
 				DAFE44CB27FC31A70050A44F /* AmountInputView */,
 			);
@@ -757,6 +779,7 @@
 				DAFE44DC27FCD5FC0050A44F /* MainAmountInputViewStyle.swift in Sources */,
 				DA7A3D7127FEEC51005DD933 /* Double+Extensions.swift in Sources */,
 				DAFE44DE27FCD6240050A44F /* TipAmountInputViewStyle.swift in Sources */,
+				DA7A3D912800E03A005DD933 /* PaymentHistoryListItemViewModel.swift in Sources */,
 				DA7A3D5B27FE0B32005DD933 /* CheckmarkView.swift in Sources */,
 				DA7A3D76280028D4005DD933 /* ButtonView.swift in Sources */,
 				DA7A3D892800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift in Sources */,
@@ -783,6 +806,7 @@
 				DAFE44EC27FD8D600050A44F /* HorizontalListItemView.swift in Sources */,
 				DA7A3D872800A3B7005DD933 /* PaymentHistoryScreen.swift in Sources */,
 				DA7A3D6B27FEEA11005DD933 /* ScreenContent.swift in Sources */,
+				DA7A3D8F2800E035005DD933 /* PaymentHistoryListItemView.swift in Sources */,
 				DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */,
 				6C51DC1A27B6176F00E54296 /* TipJarApp.swift in Sources */,
 				DAFE44E227FCD6920050A44F /* View+Hidden.swift in Sources */,
@@ -1010,7 +1034,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1031,7 +1055,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1051,6 +1075,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1070,6 +1095,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 299HJ3G3BP;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
