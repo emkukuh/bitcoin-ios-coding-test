@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Spaces {
+    static let value4: CGFloat = 4
     static let value10: CGFloat = 10
     static let value12: CGFloat = 12
     static let value16: CGFloat = 16

@@ -46,6 +46,8 @@
 		DA7A3D9428016AB0005DD933 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */; };
 		DA7A3D9628020C59005DD933 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D9528020C59005DD933 /* String+Extensions.swift */; };
 		DA7A3D9828020F36005DD933 /* Format.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D9728020F36005DD933 /* Format.strings */; };
+		DA7A3DA228021C94005DD933 /* FullScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DA128021C94005DD933 /* FullScreenModal.swift */; };
+		DA7A3DA528021D48005DD933 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -137,6 +139,8 @@
 		DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		DA7A3D9528020C59005DD933 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		DA7A3D9728020F36005DD933 /* Format.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Format.strings; sourceTree = "<group>"; };
+		DA7A3DA128021C94005DD933 /* FullScreenModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenModal.swift; sourceTree = "<group>"; };
+		DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -229,14 +233,15 @@
 		6C51DC1827B6176F00E54296 /* TipJar */ = {
 			isa = PBXGroup;
 			children = (
-				DA7A3D802800331C005DD933 /* Base */,
 				DAFE44B527FC23850050A44F /* Info.plist */,
+				DA7A3D6027FE13ED005DD933 /* AppDelegate.swift */,
 				DA7A3D4827FDFBBB005DD933 /* R.generated.swift */,
 				6C51DC1927B6176F00E54296 /* TipJarApp.swift */,
-				DA7A3D6027FE13ED005DD933 /* AppDelegate.swift */,
 				DAFE44B627FC25910050A44F /* Assets */,
+				DA7A3D802800331C005DD933 /* Base */,
 				DAFE44CA27FC31A30050A44F /* Components */,
 				DAFE44BA27FC277B0050A44F /* Constants */,
+				DA7A3D992802140F005DD933 /* Containers */,
 				DAFE44D427FCD24E0050A44F /* Copywritings */,
 				6C51DC1F27B6177000E54296 /* Preview Content */,
 				DAFE44C527FC2CB20050A44F /* Screens */,
@@ -366,6 +371,31 @@
 			path = PaymentHistoryListItemView;
 			sourceTree = "<group>";
 		};
+		DA7A3D992802140F005DD933 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DA028021C8D005DD933 /* FullScreenModal */,
+				DA7A3D5627FE09D7005DD933 /* NavigationBar */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		DA7A3DA028021C8D005DD933 /* FullScreenModal */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DA128021C94005DD933 /* FullScreenModal.swift */,
+			);
+			path = FullScreenModal;
+			sourceTree = "<group>";
+		};
+		DA7A3DA328021D37005DD933 /* PaymentDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */,
+			);
+			path = PaymentDetailView;
+			sourceTree = "<group>";
+		};
 		DAFE44B627FC25910050A44F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,10 +441,10 @@
 		DAFE44CA27FC31A30050A44F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3DA328021D37005DD933 /* PaymentDetailView */,
 				DA7A3D8C2800E018005DD933 /* ListItemViews */,
 				DA7A3D74280028C9005DD933 /* ButtonView */,
 				DA7A3D5927FE0B25005DD933 /* CheckmarkView */,
-				DA7A3D5627FE09D7005DD933 /* NavigationBar */,
 				DAFE44D527FCD2830050A44F /* StepperView */,
 				DAFE44CB27FC31A70050A44F /* AmountInputView */,
 			);
@@ -792,12 +822,14 @@
 				DA7A3D892800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift in Sources */,
 				DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */,
 				DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */,
+				DA7A3DA528021D48005DD933 /* PaymentDetailView.swift in Sources */,
 				DAFE44E627FCEC970050A44F /* Int+Extensions.swift in Sources */,
 				DA7A3D7C28002C3F005DD933 /* View+Name.swift in Sources */,
 				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
 				DAFE44FB27FD92140050A44F /* LinearGradients.swift in Sources */,
 				DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */,
 				DA7A3D6127FE13ED005DD933 /* AppDelegate.swift in Sources */,
+				DA7A3DA228021C94005DD933 /* FullScreenModal.swift in Sources */,
 				DAFE44DA27FCD5750050A44F /* AmoutInputViewStyle.swift in Sources */,
 				DA7A3D8428003362005DD933 /* HomeCoordinator.swift in Sources */,
 				DA7A3D8B2800A5F8005DD933 /* PaymentHistoryCoordinator.swift in Sources */,
