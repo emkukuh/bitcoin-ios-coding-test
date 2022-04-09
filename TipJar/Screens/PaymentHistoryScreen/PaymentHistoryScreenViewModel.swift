@@ -7,13 +7,8 @@
 
 import Foundation
 
-struct Data: Identifiable {
-    let id = UUID()
-    let name: String
-}
-
 class PaymentHistoryScreenViewModel: ScreenViewModel {
-    var paymentHistoryItemViewModels = [PaymentHistoryListItemViewModel]()
+    @Published var paymentHistoryItemViewModels = [PaymentHistoryListItemViewModel]()
 
     override init() {
         super.init()

@@ -14,25 +14,21 @@ struct HomeCoordinator: View {
         NavigationView {
             ZStack {
                 Screen { HomeScreen(viewModel: setupViewModel()) }
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        Button(action: showHistory) {
-                            Image(R.image.history.name)
-                        }
-                    }
                 renderNavigationLink()
             }
         }
-        .background(Color.white)
-        .overlay(NavigationBarView())
     }
 
     private func setupViewModel() -> HomeScreenViewModel {
+        let viewModel = HomeScreenViewModel()
+        viewModel.navigationViewModel.backButtonViewModel.isHidden = true
+        viewModel.navigationViewModel.rightButtonViewModel.iconName = R.image.history.name
+        viewModel.navigationViewModel.rightButtonViewModel.onTapHandler = { self.showHistory() }
+        viewModel.navigationViewModel.imageString = R.image.tipJarLogo.name
         return viewModel
     }
 
     private func showHistory() {
-        print("history")
         activeCoordinatorName = PaymentHistoryCoordinator.name
     }
 

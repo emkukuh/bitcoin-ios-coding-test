@@ -8,6 +8,8 @@
 import Foundation
 
 class ButtonViewModel: ObservableObject {
+    @Published var isHidden: Bool = false
     var title: String = DefaultValues.string
-    var onTapHandler: Typealiases.buttonTapHandler = { return }
+    @Published var iconName: String = DefaultValues.string
+    @Published var onTapHandler: Typealiases.buttonTapHandler = { return }
 }

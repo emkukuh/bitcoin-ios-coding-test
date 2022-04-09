@@ -9,13 +9,19 @@ import SwiftUI
 
 struct Screen<Content: ScreenContent>: View {
     private let screenContent: Content
+    @ObservedObject var viewModel: ScreenViewModel
     var body: some View { renderBody() }
 
-    init(_ screenContent: () -> Content) {
+    init(@ViewBuilder _ screenContent: () -> Content) {
         self.screenContent = screenContent()
+        self.viewModel = self.screenContent.viewModel
     }
 
     private func renderBody() -> some View {
-        screenContent
+        NavigationBarView(viewModel: viewModel.navigationViewModel) {
+            screenContent
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
+        }
     }
 }
