@@ -37,7 +37,6 @@
 		DA7A3D7A28002937005DD933 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D7928002937005DD933 /* Typealiases.swift */; };
 		DA7A3D7C28002C3F005DD933 /* View+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D7B28002C3F005DD933 /* View+Name.swift */; };
 		DA7A3D7F28003238005DD933 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D7E28003238005DD933 /* HomeScreen.swift */; };
-		DA7A3D8228003327005DD933 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D8128003327005DD933 /* MainCoordinator.swift */; };
 		DA7A3D8428003362005DD933 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D8328003362005DD933 /* HomeCoordinator.swift */; };
 		DA7A3D872800A3B7005DD933 /* PaymentHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D862800A3B7005DD933 /* PaymentHistoryScreen.swift */; };
 		DA7A3D892800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D882800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift */; };
@@ -45,6 +44,8 @@
 		DA7A3D8F2800E035005DD933 /* PaymentHistoryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D8E2800E035005DD933 /* PaymentHistoryListItemView.swift */; };
 		DA7A3D912800E03A005DD933 /* PaymentHistoryListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D902800E03A005DD933 /* PaymentHistoryListItemViewModel.swift */; };
 		DA7A3D9428016AB0005DD933 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */; };
+		DA7A3D9628020C59005DD933 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D9528020C59005DD933 /* String+Extensions.swift */; };
+		DA7A3D9828020F36005DD933 /* Format.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D9728020F36005DD933 /* Format.strings */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -127,7 +128,6 @@
 		DA7A3D7928002937005DD933 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		DA7A3D7B28002C3F005DD933 /* View+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Name.swift"; sourceTree = "<group>"; };
 		DA7A3D7E28003238005DD933 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		DA7A3D8128003327005DD933 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		DA7A3D8328003362005DD933 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		DA7A3D862800A3B7005DD933 /* PaymentHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentHistoryScreen.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/PaymentHistoryScreen.swift"; sourceTree = "<group>"; };
 		DA7A3D882800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryScreenViewModel.swift; sourceTree = "<group>"; };
@@ -135,6 +135,8 @@
 		DA7A3D8E2800E035005DD933 /* PaymentHistoryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryListItemView.swift; sourceTree = "<group>"; };
 		DA7A3D902800E03A005DD933 /* PaymentHistoryListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryListItemViewModel.swift; sourceTree = "<group>"; };
 		DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		DA7A3D9528020C59005DD933 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		DA7A3D9728020F36005DD933 /* Format.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Format.strings; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -332,7 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				DA7A3D6227FE16AA005DD933 /* Screen */,
-				DA7A3D8128003327005DD933 /* MainCoordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -437,6 +438,7 @@
 				DA7A3D5427FDFDC2005DD933 /* Button.strings */,
 				DA7A3D5227FDFCA9005DD933 /* Field.strings */,
 				DA7A3D4E27FDFC4B005DD933 /* Title.strings */,
+				DA7A3D9728020F36005DD933 /* Format.strings */,
 			);
 			path = Copywritings;
 			sourceTree = "<group>";
@@ -475,6 +477,7 @@
 				DA7A3D7B28002C3F005DD933 /* View+Name.swift */,
 				DAFE44E527FCEC970050A44F /* Int+Extensions.swift */,
 				DA7A3D7027FEEC51005DD933 /* Double+Extensions.swift */,
+				DA7A3D9528020C59005DD933 /* String+Extensions.swift */,
 				DA7A3D6E27FEEC33005DD933 /* Hashable+Extensions.swift */,
 				DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */,
 			);
@@ -618,6 +621,7 @@
 				DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */,
 				6C51DC4427B617DD00E54296 /* README.md in Resources */,
 				6C51DC2127B6177000E54296 /* Preview Assets.xcassets in Resources */,
+				DA7A3D9828020F36005DD933 /* Format.strings in Resources */,
 				6C51DC1E27B6177000E54296 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,10 +771,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7A3D6427FEE5E9005DD933 /* Screen.swift in Sources */,
-				DA7A3D8228003327005DD933 /* MainCoordinator.swift in Sources */,
 				DA7A3D7328002899005DD933 /* NavigationBarViewModel.swift in Sources */,
 				DA7A3D7F28003238005DD933 /* HomeScreen.swift in Sources */,
 				DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */,
+				DA7A3D9628020C59005DD933 /* String+Extensions.swift in Sources */,
 				DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */,
 				DAFE44D727FCD2900050A44F /* StepperView.swift in Sources */,
 				DA7A3D5D27FE0D11005DD933 /* CheckmarkViewModel.swift in Sources */,

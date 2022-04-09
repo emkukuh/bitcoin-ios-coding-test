@@ -54,9 +54,16 @@ struct NavigationBarView<Content: View>: View {
             .setHidden(viewModel.imageString.isEmpty, isRemove: true)
     }
 
+    private func renderNavTitle() -> some View {
+        Text(viewModel.title)
+            .font(Fonts.robotoMedium16)
+            .setHidden(viewModel.title.isEmpty, isRemove: true)
+    }
+
     private func renderNavbar() -> some View {
         ZStack(alignment: .center) {
             renderCenterImage()
+            renderNavTitle()
             HStack {
                 renderBackButton()
                 Spacer()

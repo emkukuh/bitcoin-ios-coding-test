@@ -35,7 +35,6 @@ struct AmountInputView: View {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.zeroSymbol = DefaultValues.string
-        formatter.minimumSignificantDigits = 0
         return TextField(
             viewModel.placeHolder,
             value: $viewModel.value,
@@ -72,7 +71,7 @@ struct AmountInputView: View {
                     .setHidden(style.symbolAlignment != .trailing, isRemove: true)
             }
             .frame(height: FrameSizes.value82)
-            .padding(.horizontal, 12)
+            .padding(.horizontal, Spaces.value12)
             .overlay(
                 RoundedRectangle(cornerRadius: CornerRadiuses.value12)
                     .stroke(

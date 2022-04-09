@@ -22,13 +22,13 @@ struct PaymentHistoryListItemView: View {
     }
 
     private func renderTip() -> some View {
-        Text(viewModel.tip)
+        Text(R.string.format.tip(viewModel.tip))
             .font(Fonts.robotoMedium16)
             .foregroundColor(Colors.Gray.light)
     }
 
     private func renderBody() -> some View {
-        HStack(alignment: .bottom, spacing: Spaces.value22) {
+        HStack(alignment: .bottom) {
             VStack(alignment: .leading, spacing: Spaces.value12) {
                 renderDate()
                 renderTitle()

@@ -6,8 +6,17 @@
 //
 
 import Combine
+import RealmSwift
+
+class Payment: Object, Identifiable {
+    @Persisted(primaryKey: true) var _id: UUID
+    @Persisted var price: Double
+    @Persisted var tip: Double
+}
+
 
 class HomeScreenViewModel: ScreenViewModel {
+    @ObservedResults(Payment.self) var payments
     var priceAmountViewModel = AmountInputViewModel()
     var tipAmountViewModel = AmountInputViewModel()
     var stepperViewModel = StepperViewModel()
@@ -18,6 +27,7 @@ class HomeScreenViewModel: ScreenViewModel {
     private var store = Set<AnyCancellable>()
     private let defaultTipPercentage: Double = 10
     private let defaultPriceAmount: Double = 100
+    private let defaultPersonCount: Int = 1
 
     override init() {
         super.init()
@@ -26,7 +36,22 @@ class HomeScreenViewModel: ScreenViewModel {
     }
 
     func buttonTap() {
-       print("snoop doog")
+        let payment = Payment()
+        var price = priceAmountViewModel.value
+        if price.isZero {
+            price = defaultPriceAmount
+        }
+        payment.price = price
+        payment.tip = personTipHorizontalListViewModel.value.doubleValue
+        $payments.append(payment)
+        print(payments)
+        resetFields()
+    }
+
+    private func resetFields() {
+        priceAmountViewModel.value = DefaultValues.double
+        tipAmountViewModel.value = defaultTipPercentage
+        stepperViewModel.value = defaultPersonCount
     }
 
     private func setupViewModel() {

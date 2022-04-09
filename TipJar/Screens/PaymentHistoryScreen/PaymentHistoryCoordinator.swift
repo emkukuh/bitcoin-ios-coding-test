@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PaymentHistoryCoordinator: View {
     @Binding var activeCoordinatorName: String?
-    @State var viewModel = PaymentHistoryScreenViewModel()
     var body: some View {
         NavigationLink(
             tag: PaymentHistoryCoordinator.name,
@@ -22,6 +21,8 @@ struct PaymentHistoryCoordinator: View {
     }
 
     private func createViewModel() -> PaymentHistoryScreenViewModel {
+        let viewModel = PaymentHistoryScreenViewModel()
+        viewModel.navigationViewModel.title = R.string.title.savedPayments()
         return viewModel
     }
 }

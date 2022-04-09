@@ -6,17 +6,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 class PaymentHistoryScreenViewModel: ScreenViewModel {
     @Published var paymentHistoryItemViewModels = [PaymentHistoryListItemViewModel]()
+    @ObservedResults(Payment.self) var payments
 
     override init() {
         super.init()
-        for i in 0...10 {
+        payments.forEach { payment in
             let item = PaymentHistoryListItemViewModel()
-            item.title = "title \(i)"
-            item.date = "date \(i)"
-            item.tip = "tip \(i)"
+            item.title = payment.price.amountStringFormat
+            item.date = Date().stringValue
+            item.tip = payment.tip.amountStringFormat
             paymentHistoryItemViewModels.append(item)
         }
     }

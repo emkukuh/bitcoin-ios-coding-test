@@ -8,6 +8,7 @@ target 'TipJar' do
   # Pods for TipJar
   pod 'R.swift'
   pod 'IQKeyboardManagerSwift'
+  pod 'RealmSwift', '~>10'
 
   target 'TipJarTests' do
     inherit! :search_paths
