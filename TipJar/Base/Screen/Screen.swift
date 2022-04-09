@@ -20,7 +20,6 @@ struct Screen<Content: ScreenContent>: View {
     private func renderBody() -> some View {
         NavigationBarView(viewModel: viewModel.navigationViewModel) {
             screenContent
-                .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(true)
         }
     }
