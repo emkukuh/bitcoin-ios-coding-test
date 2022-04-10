@@ -25,6 +25,11 @@ struct HomeCoordinator: View {
         viewModel.navigationViewModel.rightButtonViewModel.iconName = R.image.history.name
         viewModel.navigationViewModel.rightButtonViewModel.onTapHandler = { self.showHistory() }
         viewModel.navigationViewModel.imageString = R.image.tipJarLogo.name
+        viewModel.takeRecieptPicCheckmarkViewModel.onValueChange = { bool in
+            if bool {
+                activeCoordinatorName = CameraCoordinator.name
+            }
+        }
         return viewModel
     }
 
@@ -35,6 +40,7 @@ struct HomeCoordinator: View {
     private func renderNavigationLink() -> some View {
         Group {
             PaymentHistoryCoordinator(activeCoordinatorName: $activeCoordinatorName)
+            CameraCoordinator(activeCoordinatorName: $activeCoordinatorName)
         }
     }
 }

@@ -17,7 +17,7 @@ struct FullScreenModal<Content: View>: View {
             Color.yellow.opacity(0.3)
                 .edgesIgnoringSafeArea(.all)
             content
-                .frame(width: FrameSizes.screenWidth, height: FrameSizes.screenHeight)
+//                .frame(width: FrameSizes.screenWidth, height: FrameSizes.screenHeight)
         }.setHidden(!isPresented, isRemove: true)
     }
 }

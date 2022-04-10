@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct Typealiases {
     typealias buttonTapHandler = () -> Void
+    typealias boolValueChangeHandler = (Bool) -> Void
+    typealias imageValueHandler = (UIImage) -> Void
 }

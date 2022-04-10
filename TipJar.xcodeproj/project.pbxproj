@@ -16,6 +16,7 @@
 		6C51DC3727B6177000E54296 /* TipJarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C51DC3627B6177000E54296 /* TipJarUITestsLaunchTests.swift */; };
 		6C51DC4427B617DD00E54296 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC4327B617DD00E54296 /* README.md */; };
 		ACFF2547DA9D049DCA0A42E6 /* Pods_TipJar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD683361B7F684B37E1E762C /* Pods_TipJar.framework */; };
+		DA17678F2803487200493A8F /* CameraRepresentableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17678E2803487200493A8F /* CameraRepresentableViewModel.swift */; };
 		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
 		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
@@ -48,6 +49,9 @@
 		DA7A3D9828020F36005DD933 /* Format.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D9728020F36005DD933 /* Format.strings */; };
 		DA7A3DA228021C94005DD933 /* FullScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DA128021C94005DD933 /* FullScreenModal.swift */; };
 		DA7A3DA528021D48005DD933 /* PaymentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */; };
+		DA7A3DA82802225E005DD933 /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DA72802225E005DD933 /* CameraScreen.swift */; };
+		DA7A3DAB280222AB005DD933 /* CameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DAA280222AA005DD933 /* CameraRepresentable.swift */; };
+		DA7A3DAE28022397005DD933 /* CameraCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3DAD28022397005DD933 /* CameraCoordinator.swift */; };
 		DAFE44B927FC25AE0050A44F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */; };
 		DAFE44BC27FC27860050A44F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BB27FC27860050A44F /* Fonts.swift */; };
 		DAFE44C027FC2B270050A44F /* Spaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE44BF27FC2B270050A44F /* Spaces.swift */; };
@@ -109,6 +113,7 @@
 		70F4D91C93FE8913824257C8 /* Pods-TipJar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipJar.debug.xcconfig"; path = "Target Support Files/Pods-TipJar/Pods-TipJar.debug.xcconfig"; sourceTree = "<group>"; };
 		AF56281BA049498BA8217E31 /* Pods_TipJar_TipJarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar_TipJarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD683361B7F684B37E1E762C /* Pods_TipJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA17678E2803487200493A8F /* CameraRepresentableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepresentableViewModel.swift; sourceTree = "<group>"; };
 		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
@@ -141,6 +146,9 @@
 		DA7A3D9728020F36005DD933 /* Format.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Format.strings; sourceTree = "<group>"; };
 		DA7A3DA128021C94005DD933 /* FullScreenModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenModal.swift; sourceTree = "<group>"; };
 		DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailView.swift; sourceTree = "<group>"; };
+		DA7A3DA72802225E005DD933 /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
+		DA7A3DAA280222AA005DD933 /* CameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepresentable.swift; sourceTree = "<group>"; };
+		DA7A3DAD28022397005DD933 /* CameraCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCoordinator.swift; sourceTree = "<group>"; };
 		DAFE44B527FC23850050A44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFE44B827FC25AE0050A44F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		DAFE44BB27FC27860050A44F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -396,6 +404,32 @@
 			path = PaymentDetailView;
 			sourceTree = "<group>";
 		};
+		DA7A3DA628022241005DD933 /* CameraScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DA72802225E005DD933 /* CameraScreen.swift */,
+				DA7A3DAD28022397005DD933 /* CameraCoordinator.swift */,
+			);
+			path = CameraScreen;
+			sourceTree = "<group>";
+		};
+		DA7A3DA92802228A005DD933 /* ControllerRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DAC280222B5005DD933 /* CameraRepresentable */,
+			);
+			path = ControllerRepresentables;
+			sourceTree = "<group>";
+		};
+		DA7A3DAC280222B5005DD933 /* CameraRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A3DAA280222AA005DD933 /* CameraRepresentable.swift */,
+				DA17678E2803487200493A8F /* CameraRepresentableViewModel.swift */,
+			);
+			path = CameraRepresentable;
+			sourceTree = "<group>";
+		};
 		DAFE44B627FC25910050A44F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +466,7 @@
 		DAFE44C527FC2CB20050A44F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3DA628022241005DD933 /* CameraScreen */,
 				DA7A3D852800A3A5005DD933 /* PaymentHistoryScreen */,
 				DA7A3D7D2800322C005DD933 /* HomeScreen */,
 			);
@@ -441,6 +476,7 @@
 		DAFE44CA27FC31A30050A44F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A3DA92802228A005DD933 /* ControllerRepresentables */,
 				DA7A3DA328021D37005DD933 /* PaymentDetailView */,
 				DA7A3D8C2800E018005DD933 /* ListItemViews */,
 				DA7A3D74280028C9005DD933 /* ButtonView */,
@@ -801,6 +837,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7A3D6427FEE5E9005DD933 /* Screen.swift in Sources */,
+				DA7A3DAE28022397005DD933 /* CameraCoordinator.swift in Sources */,
 				DA7A3D7328002899005DD933 /* NavigationBarViewModel.swift in Sources */,
 				DA7A3D7F28003238005DD933 /* HomeScreen.swift in Sources */,
 				DAFE44EE27FD8E490050A44F /* HorizontalListItemViewModel.swift in Sources */,
@@ -813,6 +850,7 @@
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
 				DA7A3D5827FE09E2005DD933 /* NavigationBarView.swift in Sources */,
 				DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */,
+				DA7A3DA82802225E005DD933 /* CameraScreen.swift in Sources */,
 				DAFE44DC27FCD5FC0050A44F /* MainAmountInputViewStyle.swift in Sources */,
 				DA7A3D7127FEEC51005DD933 /* Double+Extensions.swift in Sources */,
 				DAFE44DE27FCD6240050A44F /* TipAmountInputViewStyle.swift in Sources */,
@@ -823,6 +861,7 @@
 				DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */,
 				DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */,
 				DA7A3DA528021D48005DD933 /* PaymentDetailView.swift in Sources */,
+				DA7A3DAB280222AB005DD933 /* CameraRepresentable.swift in Sources */,
 				DAFE44E627FCEC970050A44F /* Int+Extensions.swift in Sources */,
 				DA7A3D7C28002C3F005DD933 /* View+Name.swift in Sources */,
 				DAFE44CF27FC59E50050A44F /* AmountInputViewModel.swift in Sources */,
@@ -836,6 +875,7 @@
 				DA7A3D9428016AB0005DD933 /* UINavigationController+Extensions.swift in Sources */,
 				DA7A3D6D27FEEB66005DD933 /* ScreenViewModel.swift in Sources */,
 				DAFE44F927FD8FA00050A44F /* Colors.swift in Sources */,
+				DA17678F2803487200493A8F /* CameraRepresentableViewModel.swift in Sources */,
 				DAFE44D327FCCD1E0050A44F /* HomeScreenViewModel.swift in Sources */,
 				DAFE44D127FC5ADF0050A44F /* FrameSizes.swift in Sources */,
 				DAFE44C227FC2B7E0050A44F /* CornerRadiuses.swift in Sources */,
@@ -1008,13 +1048,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TipJar/Preview Content\"";
-				DEVELOPMENT_TEAM = 299HJ3G3BP;
+				DEVELOPMENT_TEAM = 7XEYD8LZ83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TipJar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow $(PRODUCT_NAME) for Camera Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1027,6 +1069,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1046,6 +1089,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TipJar/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow $(PRODUCT_NAME) for Camera Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1111,9 +1155,10 @@
 			baseConfigurationReference = 3AC7CB1F16F284C7C7B5ECC3 /* Pods-TipJar-TipJarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 299HJ3G3BP;
+				DEVELOPMENT_TEAM = 9VAX9JU49H;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;

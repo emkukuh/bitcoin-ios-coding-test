@@ -47,7 +47,7 @@ struct CheckmarkView: View {
     }
 
     private func renderBody() -> some View {
-        Button(action: { viewModel.isChecked.toggle() }) {
+        Button(action: viewModel.handleChangeValue) {
             HStack(spacing: Spaces.value16) {
                 renderCheckmark()
                 renderLabel()
