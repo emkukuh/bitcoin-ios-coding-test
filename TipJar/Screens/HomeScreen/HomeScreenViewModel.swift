@@ -50,6 +50,11 @@ class HomeScreenViewModel: ScreenViewModel {
                     tipPercentage: amount.1
                 )
             }.store(in: &store)
+        $recieptImageBase64.sink { imageBase64 in
+            if imageBase64.isEmpty {
+                self.takeRecieptPicCheckmarkViewModel.isChecked = false
+            }
+        }.store(in: &store)
     }
 
 
@@ -63,7 +68,6 @@ class HomeScreenViewModel: ScreenViewModel {
         payment.tip = personTipHorizontalListViewModel.value.doubleValue
         payment.imageBase64 = recieptImageBase64
         $payments.append(payment)
-        print(payments)
         resetFields()
     }
 

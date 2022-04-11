@@ -25,6 +25,7 @@ struct CameraCoordinator: View {
         let viewModel = CameraScreenViewModel()
         viewModel.navigationViewModel.isHidden = true
         viewModel.cameraRepresentableViewModel.onCancelHandler = {
+            imageBase64 = DefaultValues.string
             viewModel.backToPreviousScreen()
         }
         viewModel.cameraRepresentableViewModel.onReceiveBase64Imagehandler = { imageBase64 in
