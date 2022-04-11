@@ -81,7 +81,7 @@ class HomeScreenViewModel: ScreenViewModel {
         recieptImageBase64 = DefaultValues.string
     }
 
-    private func getPersonTip(
+    func getPersonTip(
         price: Double,
         personCount: Int,
         tipPercentage: Double
@@ -90,7 +90,7 @@ class HomeScreenViewModel: ScreenViewModel {
         return totalTip / personCount.doubleValue
     }
 
-    private func getTotalTip(price: Double, tipPercentage: Double) -> Double {
+    func getTotalTip(price: Double, tipPercentage: Double) -> Double {
         var price = price
         if price == DefaultValues.double {
             price = defaultPriceAmount

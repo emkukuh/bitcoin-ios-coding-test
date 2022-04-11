@@ -25,6 +25,7 @@
 		DA17679D2803B9F300493A8F /* MainButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */; };
 		DA17679F2803BA4300493A8F /* LabelButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */; };
 		DA1767A42804223C00493A8F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767A32804223C00493A8F /* Date+Extensions.swift */; };
+		DA1767A82804343F00493A8F /* HomeScreenModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767A72804343F00493A8F /* HomeScreenModelTests.swift */; };
 		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
 		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
@@ -130,6 +131,7 @@
 		DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonViewStyle.swift; sourceTree = "<group>"; };
 		DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonViewStyle.swift; sourceTree = "<group>"; };
 		DA1767A32804223C00493A8F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		DA1767A72804343F00493A8F /* HomeScreenModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeScreenModelTests.swift; path = ../../../../Downloads/HomeScreenModelTests.swift; sourceTree = "<group>"; };
 		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				6C51DC2A27B6177000E54296 /* TipJarTests.swift */,
+				DA1767A72804343F00493A8F /* HomeScreenModelTests.swift */,
 			);
 			path = TipJarTests;
 			sourceTree = "<group>";
@@ -945,6 +948,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1767A82804343F00493A8F /* HomeScreenModelTests.swift in Sources */,
 				6C51DC2B27B6177000E54296 /* TipJarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
