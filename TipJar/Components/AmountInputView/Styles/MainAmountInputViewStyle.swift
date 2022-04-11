@@ -8,6 +8,6 @@
 import SwiftUI
 
 class MainAmountInputViewStyle: AmountInputViewStyle {
-    let symbol: String = Symbols.dollar
+    let symbol: String = Symbols.Currency.dollar
     let symbolAlignment: HorizontalAlignment = .leading
 }

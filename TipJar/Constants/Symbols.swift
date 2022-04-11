@@ -8,6 +8,8 @@
 import Foundation
 
 struct Symbols {
-    static let dollar: String = "$"
     static let percentage: String = "%"
+    struct Currency {
+        static let dollar: String = "$"
+    }
 }

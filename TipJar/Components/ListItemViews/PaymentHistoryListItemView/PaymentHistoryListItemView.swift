@@ -26,7 +26,7 @@ struct PaymentHistoryListItemView: View {
     private func renderTip() -> some View {
         Text(R.string.format.tip(viewModel.tip))
             .font(Fonts.robotoMedium16)
-            .foregroundColor(Colors.Gray.light)
+            .foregroundColor(Colors.Gray.medium)
             .padding(.bottom, Spaces.value4)
     }
 

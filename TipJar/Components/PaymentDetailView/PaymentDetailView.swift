@@ -12,7 +12,7 @@ struct PaymentDetailView: View {
     var body: some View { renderBody() }
 
     private func renderImage(proxy: GeometryProxy) -> some View {
-        Image(viewModel.recieptImageBase64)
+        Image(uiImage: viewModel.recieptImageBase64.imageFromBase64)
             .resizable()
             .frame(
                 width: proxy.size.width - Spaces.value42,
@@ -23,13 +23,9 @@ struct PaymentDetailView: View {
     }
 
     private func renderRecieptInfo() -> some View {
-//        let vm = PaymentHistoryListItemViewModel()
-//        vm.tip = "10.22"
-//        vm.date = "10 11 12"
-//        vm.price = "200.00"
-        return PaymentHistoryListItemView(viewModel: viewModel.paymentListViewModel)
-            .padding()
-            .background(Color.blue)
+        PaymentHistoryListItemView(viewModel: viewModel.paymentListViewModel)
+            .padding(Spaces.value16)
+            .background(Color.white)
             .cornerRadius(CornerRadiuses.value12)
     }
 
@@ -47,6 +43,9 @@ struct PaymentDetailView: View {
                 renderRecieptInfo()
                 renderCloseButton()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding(.horizontal, Spaces.value22)
+            .frame(alignment: .center)
         }
     }
 }

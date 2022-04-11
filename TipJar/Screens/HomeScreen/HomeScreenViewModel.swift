@@ -87,7 +87,7 @@ class HomeScreenViewModel: ScreenViewModel {
             price = defaultPriceAmount
         }
         let totalTip = price * tipPercentage / 100
-        totalTipHorizontalListViewModel.value = totalTip.amountStringFormat
-        personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).amountStringFormat
+        totalTipHorizontalListViewModel.value = totalTip.amountStringFormat()
+        personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).amountStringFormat()
     }
 }
