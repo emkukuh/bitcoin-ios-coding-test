@@ -12,7 +12,7 @@ class PaymentHistoryListItemViewModel: ObservableObject, Identifiable {
     var price: String = DefaultValues.string
     var date: String = DefaultValues.string
     var tip: String = DefaultValues.string
-    var imageString: String = DefaultValues.string
+    var imageBase64: String = DefaultValues.string
 }
 
 extension Array where Element == PaymentHistoryListItemViewModel {

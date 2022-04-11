@@ -31,8 +31,20 @@ struct PaymentHistoryListItemView: View {
     }
 
     private func renderRecieptImage() -> some View {
-        Text("sd")
-            .padding(.bottom, Spaces.value4)
+        HStack(alignment: .center) {
+            Image(uiImage: viewModel.imageBase64.imageFromBase64)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(
+                    width: FrameSizes.value50,
+                    height: FrameSizes.value50
+                ).clipShape(
+                    RoundedRectangle(cornerRadius: CornerRadiuses.value12)
+                )
+        }.setHidden(
+            viewModel.imageBase64.isEmpty,
+            isRemove: true
+        )
     }
 
     private func renderBody() -> some View {
@@ -42,19 +54,10 @@ struct PaymentHistoryListItemView: View {
                 renderTitle()
             }
             Spacer()
-            HStack(spacing: Spaces.value22) {
+            HStack(alignment: .bottom, spacing: Spaces.value22) {
                 renderTip()
                 renderRecieptImage()
             }
-        }
-    }
-}
-
-struct PaymentHistoryListItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            PaymentHistoryListItemView(viewModel: PaymentHistoryListItemViewModel())
-            PaymentHistoryListItemView(viewModel: PaymentHistoryListItemViewModel())
         }
     }
 }

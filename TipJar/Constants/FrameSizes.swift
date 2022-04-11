@@ -17,6 +17,7 @@ struct FrameSizes {
     }
     static let value30: CGFloat = 30
     static let value42: CGFloat = 42
+    static let value50: CGFloat = 50
     static let value70: CGFloat = 70
     static let value82: CGFloat = 82
 }

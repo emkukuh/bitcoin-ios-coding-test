@@ -12,6 +12,7 @@ class Payment: Object, Identifiable {
     @Persisted(primaryKey: true) var _id: UUID
     @Persisted var price: Double
     @Persisted var tip: Double
+    @Persisted var date: Date = Date()
     @Persisted var imageBase64: String
 }
 

@@ -36,7 +36,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
     private func setupRealm() {
         let config = Realm.Configuration(
-            schemaVersion: 1
+            schemaVersion: 2
         )
         Realm.Configuration.defaultConfiguration = config
     }

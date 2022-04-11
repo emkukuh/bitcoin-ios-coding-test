@@ -35,7 +35,7 @@ struct StepperView: View {
                         lineWidth: 1
                     )
                 )
-        }.clipped()
+        }
     }
 
     private func renderValue() -> some View {

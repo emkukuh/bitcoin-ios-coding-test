@@ -23,6 +23,7 @@ class PaymentHistoryScreenViewModel: ScreenViewModel {
         paymentHistoryItemViewModels = payments.map { payment in
             let item = PaymentHistoryListItemViewModel()
             item.price = payment.price.amountStringFormat
+            item.imageBase64 = payment.imageBase64
             item.date = Date().stringValue
             item.tip = payment.tip.amountStringFormat
             return item
@@ -38,6 +39,10 @@ class PaymentHistoryScreenViewModel: ScreenViewModel {
         if selectedPayment.imageBase64.isEmpty {
              return
         }
+        paymentDetailViewModel.recieptImageBase64 = selectedPayment.imageBase64
+        paymentDetailViewModel.paymentListViewModel.price = selectedPayment.price.amountStringFormat
+        paymentDetailViewModel.paymentListViewModel.tip = selectedPayment.tip.amountStringFormat
+        paymentDetailViewModel.paymentListViewModel.date = selectedPayment.date.stringValue
         isRecieptPresented = true
     }
 }
