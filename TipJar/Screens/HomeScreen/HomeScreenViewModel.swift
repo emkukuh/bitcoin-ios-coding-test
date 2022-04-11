@@ -78,6 +78,7 @@ class HomeScreenViewModel: ScreenViewModel {
         priceAmountViewModel.value = DefaultValues.double
         tipAmountViewModel.value = defaultTipPercentage
         stepperViewModel.value = defaultPersonCount
+        recieptImageBase64 = DefaultValues.string
     }
 
     private func getPersonTip(
