@@ -24,6 +24,7 @@
 		DA17679B2803B9B200493A8F /* ButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679A2803B9B200493A8F /* ButtonViewStyle.swift */; };
 		DA17679D2803B9F300493A8F /* MainButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */; };
 		DA17679F2803BA4300493A8F /* LabelButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */; };
+		DA1767A42804223C00493A8F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767A32804223C00493A8F /* Date+Extensions.swift */; };
 		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
 		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
@@ -128,6 +129,7 @@
 		DA17679A2803B9B200493A8F /* ButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewStyle.swift; sourceTree = "<group>"; };
 		DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonViewStyle.swift; sourceTree = "<group>"; };
 		DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonViewStyle.swift; sourceTree = "<group>"; };
+		DA1767A32804223C00493A8F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
@@ -583,6 +585,7 @@
 				DA7A3D9528020C59005DD933 /* String+Extensions.swift */,
 				DA7A3D6E27FEEC33005DD933 /* Hashable+Extensions.swift */,
 				DA7A3D9328016AB0005DD933 /* UINavigationController+Extensions.swift */,
+				DA1767A32804223C00493A8F /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -882,6 +885,7 @@
 				DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */,
 				DAFE44D727FCD2900050A44F /* StepperView.swift in Sources */,
 				DA7A3D5D27FE0D11005DD933 /* CheckmarkViewModel.swift in Sources */,
+				DA1767A42804223C00493A8F /* Date+Extensions.swift in Sources */,
 				DA7A3D6F27FEEC33005DD933 /* Hashable+Extensions.swift in Sources */,
 				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,

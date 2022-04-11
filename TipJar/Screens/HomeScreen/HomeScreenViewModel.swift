@@ -57,7 +57,6 @@ class HomeScreenViewModel: ScreenViewModel {
         }.store(in: &store)
     }
 
-
     private func submitPaymentHandler() {
         let payment = Payment()
         var price = priceAmountViewModel.value
@@ -65,7 +64,11 @@ class HomeScreenViewModel: ScreenViewModel {
             price = defaultPriceAmount
         }
         payment.price = price
-        payment.tip = personTipHorizontalListViewModel.value.doubleValue
+        payment.tip = getPersonTip(
+            price: price,
+            personCount: stepperViewModel.value,
+            tipPercentage: tipAmountViewModel.value
+        )
         payment.imageBase64 = recieptImageBase64
         $payments.append(payment)
         resetFields()
@@ -77,16 +80,29 @@ class HomeScreenViewModel: ScreenViewModel {
         stepperViewModel.value = defaultPersonCount
     }
 
+    private func getPersonTip(
+        price: Double,
+        personCount: Int,
+        tipPercentage: Double
+    ) -> Double {
+        let totalTip = getTotalTip(price: price, tipPercentage: tipPercentage)
+        return totalTip / personCount.doubleValue
+    }
+
+    private func getTotalTip(price: Double, tipPercentage: Double) -> Double {
+        var price = price
+        if price == DefaultValues.double {
+            price = defaultPriceAmount
+        }
+        return price * tipPercentage / 100
+    }
+
     private func calculateTipInfo(
         price: Double,
         personCount: Int,
         tipPercentage: Double
     ) {
-        var price = price
-        if price == DefaultValues.double {
-            price = defaultPriceAmount
-        }
-        let totalTip = price * tipPercentage / 100
+        let totalTip = getTotalTip(price: price, tipPercentage: tipPercentage)
         totalTipHorizontalListViewModel.value = totalTip.amountStringFormat()
         personTipHorizontalListViewModel.value = (totalTip / personCount.doubleValue).amountStringFormat()
     }

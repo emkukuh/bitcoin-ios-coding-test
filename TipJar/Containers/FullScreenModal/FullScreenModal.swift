@@ -19,6 +19,38 @@ struct FullScreenModal<Content: View>: View {
         }
         .edgesIgnoringSafeArea(.all)
         .setHidden(!isPresented, isRemove: true)
-        
+    }
+}
+
+struct FullScreenModalModifier<SubContent: View>: ViewModifier {
+    @Binding var isPresented: Bool
+    let subContent: SubContent
+
+    init(
+        isPresented: Binding<Bool>,
+        @ViewBuilder subContent: () -> SubContent
+    ) {
+        self._isPresented = isPresented
+        self.subContent = subContent()
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .overlay {
+                FullScreenModal(isPresented: $isPresented) {
+                    subContent
+                }.edgesIgnoringSafeArea(.all)
+            }
+    }
+}
+
+extension View {
+    func FullScreenModal<Content: View>(
+        isPresented: Binding<Bool>,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        modifier(FullScreenModalModifier(isPresented: isPresented) {
+            content()
+        })
     }
 }

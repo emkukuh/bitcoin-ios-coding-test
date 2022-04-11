@@ -16,9 +16,8 @@ struct PaymentDetailView: View {
             .resizable()
             .frame(
                 width: proxy.size.width - Spaces.value42,
-                height: proxy.size.height / 2
+                height: proxy.size.height / 1.6
             )
-            .background(Color.yellow)
             .cornerRadius(CornerRadiuses.value12)
     }
 

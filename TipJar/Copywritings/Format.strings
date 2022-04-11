@@ -5,4 +5,5 @@
   Created by kukuh on 10/04/22.
   
 */
-"tip" = "tip: %@";
+"tip" = "Tip: %@";
+"main.date.format" = "yyyy MMMM dd";

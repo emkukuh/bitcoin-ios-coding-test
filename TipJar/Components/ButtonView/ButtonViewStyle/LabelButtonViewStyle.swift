@@ -10,5 +10,5 @@ import SwiftUI
 
 class LabelButtonViewStyle: ButtonViewStyle {
     let backgrounColor: LinearGradient = LinearGradients.clear
-    var foregroundColor: Color = .black
+    var foregroundColor: Color = .white
 }

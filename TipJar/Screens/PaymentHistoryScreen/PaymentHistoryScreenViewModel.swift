@@ -24,7 +24,7 @@ class PaymentHistoryScreenViewModel: ScreenViewModel {
             let item = PaymentHistoryListItemViewModel()
             item.price = payment.price.amountStringFormat()
             item.imageBase64 = payment.imageBase64
-            item.date = Date().stringValue
+            item.date = Date().mainDateFormat
             item.tip = payment.tip.amountStringFormat()
             return item
         }
@@ -42,7 +42,7 @@ class PaymentHistoryScreenViewModel: ScreenViewModel {
         paymentDetailViewModel.recieptImageBase64 = selectedPayment.imageBase64
         paymentDetailViewModel.paymentListViewModel.price = selectedPayment.price.amountStringFormat()
         paymentDetailViewModel.paymentListViewModel.tip = selectedPayment.tip.amountStringFormat()
-        paymentDetailViewModel.paymentListViewModel.date = selectedPayment.date.stringValue
+        paymentDetailViewModel.paymentListViewModel.date = selectedPayment.date.mainDateFormat
         isRecieptPresented = true
     }
 }
