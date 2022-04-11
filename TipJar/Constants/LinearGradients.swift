@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct LinearGradients {
+    static let clear = LinearGradient(
+        colors: [],
+        startPoint: .top,
+        endPoint: .bottom
+    )
     struct Orange {
         static let vertical = LinearGradient(
             colors: [

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct PaymentDetailView: View {
+    @ObservedObject var viewModel: PaymentDetailViewModel
     var body: some View { renderBody() }
 
     private func renderImage(proxy: GeometryProxy) -> some View {
-        Image("")
+        Image(viewModel.recieptImageBase64)
             .resizable()
             .frame(
                 width: proxy.size.width - Spaces.value42,
@@ -22,14 +23,21 @@ struct PaymentDetailView: View {
     }
 
     private func renderRecieptInfo() -> some View {
-        let vm = PaymentHistoryListItemViewModel()
-        vm.tip = "10.22"
-        vm.date = "10 11 12"
-        vm.price = "200.00"
-        return PaymentHistoryListItemView(viewModel: vm)
+//        let vm = PaymentHistoryListItemViewModel()
+//        vm.tip = "10.22"
+//        vm.date = "10 11 12"
+//        vm.price = "200.00"
+        return PaymentHistoryListItemView(viewModel: viewModel.paymentListViewModel)
             .padding()
             .background(Color.blue)
             .cornerRadius(CornerRadiuses.value12)
+    }
+
+    private func renderCloseButton() -> some View {
+        ButtonView(
+            viewModel: viewModel.closeButtonViewModel,
+            style: LabelButtonViewStyle()
+        )
     }
 
     private func renderBody() -> some View {
@@ -37,6 +45,7 @@ struct PaymentDetailView: View {
             VStack {
                 renderImage(proxy: proxy)
                 renderRecieptInfo()
+                renderCloseButton()
             }
         }
     }
@@ -44,7 +53,7 @@ struct PaymentDetailView: View {
 
 struct PaymentDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PaymentDetailView()
+        PaymentDetailView(viewModel: PaymentDetailViewModel())
             .padding(.horizontal, Spaces.value22)
     }
 }

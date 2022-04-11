@@ -20,6 +20,10 @@
 		DA17679128034F4600493A8F /* CameraScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679028034F4600493A8F /* CameraScreenViewModel.swift */; };
 		DA1767932803AED800493A8F /* UIImage+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767922803AED800493A8F /* UIImage+Base64.swift */; };
 		DA1767962803B10D00493A8F /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767952803B10D00493A8F /* Payment.swift */; };
+		DA1767982803B91D00493A8F /* PaymentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767972803B91D00493A8F /* PaymentDetailViewModel.swift */; };
+		DA17679B2803B9B200493A8F /* ButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679A2803B9B200493A8F /* ButtonViewStyle.swift */; };
+		DA17679D2803B9F300493A8F /* MainButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */; };
+		DA17679F2803BA4300493A8F /* LabelButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */; };
 		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
 		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
@@ -120,6 +124,10 @@
 		DA17679028034F4600493A8F /* CameraScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreenViewModel.swift; sourceTree = "<group>"; };
 		DA1767922803AED800493A8F /* UIImage+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Base64.swift"; sourceTree = "<group>"; };
 		DA1767952803B10D00493A8F /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		DA1767972803B91D00493A8F /* PaymentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailViewModel.swift; sourceTree = "<group>"; };
+		DA17679A2803B9B200493A8F /* ButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewStyle.swift; sourceTree = "<group>"; };
+		DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonViewStyle.swift; sourceTree = "<group>"; };
+		DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonViewStyle.swift; sourceTree = "<group>"; };
 		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
@@ -311,6 +319,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DA1767992803B9A700493A8F /* ButtonViewStyle */ = {
+			isa = PBXGroup;
+			children = (
+				DA17679A2803B9B200493A8F /* ButtonViewStyle.swift */,
+				DA17679C2803B9F300493A8F /* MainButtonViewStyle.swift */,
+				DA17679E2803BA4300493A8F /* LabelButtonViewStyle.swift */,
+			);
+			path = ButtonViewStyle;
+			sourceTree = "<group>";
+		};
 		DA7A3D5627FE09D7005DD933 /* NavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +360,7 @@
 		DA7A3D74280028C9005DD933 /* ButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				DA1767992803B9A700493A8F /* ButtonViewStyle */,
 				DA7A3D75280028D4005DD933 /* ButtonView.swift */,
 				DA7A3D772800290A005DD933 /* ButtonViewModel.swift */,
 			);
@@ -415,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7A3DA428021D48005DD933 /* PaymentDetailView.swift */,
+				DA1767972803B91D00493A8F /* PaymentDetailViewModel.swift */,
 			);
 			path = PaymentDetailView;
 			sourceTree = "<group>";
@@ -865,6 +885,7 @@
 				DA7A3D6F27FEEC33005DD933 /* Hashable+Extensions.swift in Sources */,
 				DAFE44C827FC2D140050A44F /* Symbols.swift in Sources */,
 				DAFE44CD27FC31B40050A44F /* AmountInputView.swift in Sources */,
+				DA1767982803B91D00493A8F /* PaymentDetailViewModel.swift in Sources */,
 				DA7A3D5827FE09E2005DD933 /* NavigationBarView.swift in Sources */,
 				DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */,
 				DA7A3DA82802225E005DD933 /* CameraScreen.swift in Sources */,
@@ -878,6 +899,7 @@
 				DA7A3D76280028D4005DD933 /* ButtonView.swift in Sources */,
 				DA7A3D892800A3E5005DD933 /* PaymentHistoryScreenViewModel.swift in Sources */,
 				DAFE44F327FD8F580050A44F /* SmallHorizontalListItemViewStyle.swift in Sources */,
+				DA17679F2803BA4300493A8F /* LabelButtonViewStyle.swift in Sources */,
 				DA7A3D5F27FE10B3005DD933 /* MediumHorizontalListItemViewStyle.swift in Sources */,
 				DA7A3DA528021D48005DD933 /* PaymentDetailView.swift in Sources */,
 				DA7A3DAB280222AB005DD933 /* CameraRepresentable.swift in Sources */,
@@ -893,7 +915,9 @@
 				DA7A3D8B2800A5F8005DD933 /* PaymentHistoryCoordinator.swift in Sources */,
 				DA7A3D9428016AB0005DD933 /* UINavigationController+Extensions.swift in Sources */,
 				DA7A3D6D27FEEB66005DD933 /* ScreenViewModel.swift in Sources */,
+				DA17679D2803B9F300493A8F /* MainButtonViewStyle.swift in Sources */,
 				DAFE44F927FD8FA00050A44F /* Colors.swift in Sources */,
+				DA17679B2803B9B200493A8F /* ButtonViewStyle.swift in Sources */,
 				DA17678F2803487200493A8F /* CameraRepresentableViewModel.swift in Sources */,
 				DAFE44D327FCCD1E0050A44F /* HomeScreenViewModel.swift in Sources */,
 				DAFE44D127FC5ADF0050A44F /* FrameSizes.swift in Sources */,

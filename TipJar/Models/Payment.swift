@@ -14,3 +14,9 @@ class Payment: Object, Identifiable {
     @Persisted var tip: Double
     @Persisted var imageBase64: String
 }
+
+extension Array where Element == Payment {
+    func findById(_ id: UUID) -> Payment {
+        first(where: { $0._id == id }) ?? Payment()
+    }
+}

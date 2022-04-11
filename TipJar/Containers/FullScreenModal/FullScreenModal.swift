@@ -14,10 +14,11 @@ struct FullScreenModal<Content: View>: View {
 
     private func renderBody() -> some View {
         ZStack {
-            Color.yellow.opacity(0.3)
-                .edgesIgnoringSafeArea(.all)
             content
-//                .frame(width: FrameSizes.screenWidth, height: FrameSizes.screenHeight)
-        }.setHidden(!isPresented, isRemove: true)
+                .frame(width: FrameSizes.screenWidth, height: FrameSizes.screenHeight)
+                .edgesIgnoringSafeArea(.all)
+        }
+        .setHidden(!isPresented, isRemove: true)
+        
     }
 }

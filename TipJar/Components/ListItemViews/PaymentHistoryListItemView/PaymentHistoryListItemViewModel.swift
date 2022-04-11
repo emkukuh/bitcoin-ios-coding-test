@@ -14,3 +14,9 @@ class PaymentHistoryListItemViewModel: ObservableObject, Identifiable {
     var tip: String = DefaultValues.string
     var imageString: String = DefaultValues.string
 }
+
+extension Array where Element == PaymentHistoryListItemViewModel {
+    func getIndexById(_ id: UUID) -> Int {
+        firstIndex(where: { $0.id == id }) ?? DefaultValues.int
+    }
+}
