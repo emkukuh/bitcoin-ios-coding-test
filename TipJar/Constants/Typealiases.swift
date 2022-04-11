@@ -11,5 +11,5 @@ import UIKit
 struct Typealiases {
     typealias buttonTapHandler = () -> Void
     typealias boolValueChangeHandler = (Bool) -> Void
-    typealias imageValueHandler = (UIImage) -> Void
+    typealias base64ValueHandler = (String) -> Void
 }

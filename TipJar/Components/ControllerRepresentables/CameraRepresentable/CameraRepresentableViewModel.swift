@@ -9,5 +9,5 @@ import Foundation
 
 class CameraRepresentableViewModel: ObservableObject {
     var onCancelHandler: Typealiases.buttonTapHandler = { return }
-    var onSuccessHandler: Typealiases.imageValueHandler = { _ in return }
+    var onReceiveBase64Imagehandler: Typealiases.base64ValueHandler = { _ in return }
 }

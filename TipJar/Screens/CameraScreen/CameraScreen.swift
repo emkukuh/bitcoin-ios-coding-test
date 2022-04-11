@@ -8,12 +8,12 @@
 import UIKit
 import SwiftUI
 
-class CameraScreenViewModel: ScreenViewModel {}
-
 struct CameraScreen: ScreenContent {
     @ObservedObject var viewModel: CameraScreenViewModel
     var body: some View {
-        CameraRepresentable()
+        ZStack {
+            CameraRepresentable(viewModel: viewModel.cameraRepresentableViewModel)
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Screen<Content: ScreenContent>: View {
+    @Environment(\.presentationMode) var presentationMode
     private let screenContent: Content
     @ObservedObject var viewModel: ScreenViewModel
     var body: some View { renderBody() }
@@ -21,6 +22,10 @@ struct Screen<Content: ScreenContent>: View {
         NavigationBarView(viewModel: viewModel.navigationViewModel) {
             screenContent
                 .navigationBarHidden(true)
+        }.onAppear {
+            viewModel.onBackHandler = {
+                presentationMode.wrappedValue.dismiss()
+            }
         }
     }
 }

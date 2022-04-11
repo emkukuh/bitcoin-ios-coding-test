@@ -17,6 +17,9 @@
 		6C51DC4427B617DD00E54296 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6C51DC4327B617DD00E54296 /* README.md */; };
 		ACFF2547DA9D049DCA0A42E6 /* Pods_TipJar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD683361B7F684B37E1E762C /* Pods_TipJar.framework */; };
 		DA17678F2803487200493A8F /* CameraRepresentableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17678E2803487200493A8F /* CameraRepresentableViewModel.swift */; };
+		DA17679128034F4600493A8F /* CameraScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17679028034F4600493A8F /* CameraScreenViewModel.swift */; };
+		DA1767932803AED800493A8F /* UIImage+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767922803AED800493A8F /* UIImage+Base64.swift */; };
+		DA1767962803B10D00493A8F /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767952803B10D00493A8F /* Payment.swift */; };
 		DA7A3D4927FDFBBB005DD933 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A3D4827FDFBBB005DD933 /* R.generated.swift */; };
 		DA7A3D4B27FDFC22005DD933 /* Placeholder.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */; };
 		DA7A3D4F27FDFC4B005DD933 /* Title.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7A3D4E27FDFC4B005DD933 /* Title.strings */; };
@@ -114,6 +117,9 @@
 		AF56281BA049498BA8217E31 /* Pods_TipJar_TipJarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar_TipJarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD683361B7F684B37E1E762C /* Pods_TipJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA17678E2803487200493A8F /* CameraRepresentableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRepresentableViewModel.swift; sourceTree = "<group>"; };
+		DA17679028034F4600493A8F /* CameraScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreenViewModel.swift; sourceTree = "<group>"; };
+		DA1767922803AED800493A8F /* UIImage+Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Base64.swift"; sourceTree = "<group>"; };
+		DA1767952803B10D00493A8F /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		DA7A3D4827FDFBBB005DD933 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		DA7A3D4A27FDFC22005DD933 /* Placeholder.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Placeholder.strings; sourceTree = "<group>"; };
 		DA7A3D4E27FDFC4B005DD933 /* Title.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Title.strings; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 				DAFE44BA27FC277B0050A44F /* Constants */,
 				DA7A3D992802140F005DD933 /* Containers */,
 				DAFE44D427FCD24E0050A44F /* Copywritings */,
+				DA1767942803B10600493A8F /* Models */,
 				6C51DC1F27B6177000E54296 /* Preview Content */,
 				DAFE44C527FC2CB20050A44F /* Screens */,
 				DAFE44DF27FCD6800050A44F /* Utils */,
@@ -294,6 +301,14 @@
 				EC083C2C81E0623A39D1EF1B /* Pods-TipJarTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA1767942803B10600493A8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA1767952803B10D00493A8F /* Payment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DA7A3D5627FE09D7005DD933 /* NavigationBar */ = {
@@ -408,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7A3DA72802225E005DD933 /* CameraScreen.swift */,
+				DA17679028034F4600493A8F /* CameraScreenViewModel.swift */,
 				DA7A3DAD28022397005DD933 /* CameraCoordinator.swift */,
 			);
 			path = CameraScreen;
@@ -540,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				DAFE44E127FCD6920050A44F /* View+Hidden.swift */,
+				DA1767922803AED800493A8F /* UIImage+Base64.swift */,
 				DA7A3D7B28002C3F005DD933 /* View+Name.swift */,
 				DAFE44E527FCEC970050A44F /* Int+Extensions.swift */,
 				DA7A3D7027FEEC51005DD933 /* Double+Extensions.swift */,
@@ -851,6 +868,8 @@
 				DA7A3D5827FE09E2005DD933 /* NavigationBarView.swift in Sources */,
 				DAFE44E427FCEBC90050A44F /* StepperViewModel.swift in Sources */,
 				DA7A3DA82802225E005DD933 /* CameraScreen.swift in Sources */,
+				DA17679128034F4600493A8F /* CameraScreenViewModel.swift in Sources */,
+				DA1767962803B10D00493A8F /* Payment.swift in Sources */,
 				DAFE44DC27FCD5FC0050A44F /* MainAmountInputViewStyle.swift in Sources */,
 				DA7A3D7127FEEC51005DD933 /* Double+Extensions.swift in Sources */,
 				DAFE44DE27FCD6240050A44F /* TipAmountInputViewStyle.swift in Sources */,
@@ -883,6 +902,7 @@
 				DA7A3D7A28002937005DD933 /* Typealiases.swift in Sources */,
 				DAFE44F727FD8F730050A44F /* HorizontalListItemViewStyle.swift in Sources */,
 				DA7A3D782800290A005DD933 /* ButtonViewModel.swift in Sources */,
+				DA1767932803AED800493A8F /* UIImage+Base64.swift in Sources */,
 				DAFE44EC27FD8D600050A44F /* HorizontalListItemView.swift in Sources */,
 				DA7A3D872800A3B7005DD933 /* PaymentHistoryScreen.swift in Sources */,
 				DA7A3D6B27FEEA11005DD933 /* ScreenContent.swift in Sources */,
@@ -1056,7 +1076,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TipJar/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Allow $(PRODUCT_NAME) for Camera Access";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow TipJar for Camera Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1067,7 +1087,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitcoin.tipjar.TipJars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1089,7 +1109,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TipJar/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Allow $(PRODUCT_NAME) for Camera Access";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow TipJar for Camera Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

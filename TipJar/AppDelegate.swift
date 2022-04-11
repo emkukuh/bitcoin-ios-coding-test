@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import IQKeyboardManagerSwift
+import RealmSwift
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(
@@ -16,6 +17,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     ) -> Bool {
         setupNavigationBar()
         setupKeyboard()
+        setupRealm()
         return true
     }
 
@@ -30,5 +32,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
         IQKeyboardManager.shared.previousNextDisplayMode = .alwaysHide
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+    }
+
+    private func setupRealm() {
+        let config = Realm.Configuration(
+            schemaVersion: 1
+        )
+        Realm.Configuration.defaultConfiguration = config
     }
 }

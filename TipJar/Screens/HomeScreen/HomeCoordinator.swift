@@ -20,27 +20,37 @@ struct HomeCoordinator: View {
     }
 
     private func setupViewModel() -> HomeScreenViewModel {
-        let viewModel = HomeScreenViewModel()
         viewModel.navigationViewModel.backButtonViewModel.isHidden = true
         viewModel.navigationViewModel.rightButtonViewModel.iconName = R.image.history.name
-        viewModel.navigationViewModel.rightButtonViewModel.onTapHandler = { self.showHistory() }
+        viewModel.navigationViewModel.rightButtonViewModel.onTapHandler = {
+            self.openPaymentHistoryCoordinator()
+        }
         viewModel.navigationViewModel.imageString = R.image.tipJarLogo.name
-        viewModel.takeRecieptPicCheckmarkViewModel.onValueChange = { bool in
-            if bool {
-                activeCoordinatorName = CameraCoordinator.name
+        viewModel.takeRecieptPicCheckmarkViewModel.onValueChange = { isChecked in
+            if isChecked {
+                self.openCameraCoordinator()
+                return
             }
+            viewModel.recieptImageBase64 = DefaultValues.string
         }
         return viewModel
     }
 
-    private func showHistory() {
+    private func openPaymentHistoryCoordinator() {
         activeCoordinatorName = PaymentHistoryCoordinator.name
+    }
+
+    private func openCameraCoordinator() {
+        activeCoordinatorName = CameraCoordinator.name
     }
 
     private func renderNavigationLink() -> some View {
         Group {
             PaymentHistoryCoordinator(activeCoordinatorName: $activeCoordinatorName)
-            CameraCoordinator(activeCoordinatorName: $activeCoordinatorName)
+            CameraCoordinator(
+                activeCoordinatorName: $activeCoordinatorName,
+                imageBase64: $viewModel.recieptImageBase64
+            )
         }
     }
 }

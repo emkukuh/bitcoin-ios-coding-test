@@ -8,13 +8,6 @@
 import Combine
 import RealmSwift
 
-class Payment: Object, Identifiable {
-    @Persisted(primaryKey: true) var _id: UUID
-    @Persisted var price: Double
-    @Persisted var tip: Double
-}
-
-
 class HomeScreenViewModel: ScreenViewModel {
     @ObservedResults(Payment.self) var payments
     var priceAmountViewModel = AmountInputViewModel()
@@ -24,6 +17,7 @@ class HomeScreenViewModel: ScreenViewModel {
     var personTipHorizontalListViewModel = HorizontalListItemViewModel()
     var takeRecieptPicCheckmarkViewModel = CheckmarkViewModel()
     var mainButtonViewMdoel = ButtonViewModel()
+    @Published var recieptImageBase64: String = DefaultValues.string
     private var store = Set<AnyCancellable>()
     private let defaultTipPercentage: Double = 10
     private let defaultPriceAmount: Double = 100
@@ -35,25 +29,6 @@ class HomeScreenViewModel: ScreenViewModel {
         setupSubscription()
     }
 
-    func buttonTap() {
-        let payment = Payment()
-        var price = priceAmountViewModel.value
-        if price.isZero {
-            price = defaultPriceAmount
-        }
-        payment.price = price
-        payment.tip = personTipHorizontalListViewModel.value.doubleValue
-        $payments.append(payment)
-        print(payments)
-        resetFields()
-    }
-
-    private func resetFields() {
-        priceAmountViewModel.value = DefaultValues.double
-        tipAmountViewModel.value = defaultTipPercentage
-        stepperViewModel.value = defaultPersonCount
-    }
-
     private func setupViewModel() {
         tipAmountViewModel.title = R.string.title.tipPercentage()
         tipAmountViewModel.placeHolder = R.string.placeholder.amount10()
@@ -61,7 +36,7 @@ class HomeScreenViewModel: ScreenViewModel {
         totalTipHorizontalListViewModel.title = R.string.field.totalTip()
         personTipHorizontalListViewModel.title = R.string.field.perPerson()
         mainButtonViewMdoel.title = R.string.button.savePayment()
-        mainButtonViewMdoel.onTapHandler = buttonTap
+        mainButtonViewMdoel.onTapHandler = submitPaymentHandler
     }
 
     private func setupSubscription() {
@@ -75,6 +50,27 @@ class HomeScreenViewModel: ScreenViewModel {
                     tipPercentage: amount.1
                 )
             }.store(in: &store)
+    }
+
+
+    private func submitPaymentHandler() {
+        let payment = Payment()
+        var price = priceAmountViewModel.value
+        if price.isZero {
+            price = defaultPriceAmount
+        }
+        payment.price = price
+        payment.tip = personTipHorizontalListViewModel.value.doubleValue
+        payment.imageBase64 = recieptImageBase64
+        $payments.append(payment)
+        print(payments)
+        resetFields()
+    }
+
+    private func resetFields() {
+        priceAmountViewModel.value = DefaultValues.double
+        tipAmountViewModel.value = defaultTipPercentage
+        stepperViewModel.value = defaultPersonCount
     }
 
     private func calculateTipInfo(

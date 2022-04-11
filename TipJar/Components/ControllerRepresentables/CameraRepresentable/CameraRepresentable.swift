@@ -41,9 +41,8 @@ extension CameraRepresentable {
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-//                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                print("ssdsds")
-                viewModel.onSuccessHandler(image)
+                let base64Image = image.base64
+                viewModel.onReceiveBase64Imagehandler(base64Image)
             }
         }
     }

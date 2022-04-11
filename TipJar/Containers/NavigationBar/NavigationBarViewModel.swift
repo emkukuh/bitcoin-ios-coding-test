@@ -8,8 +8,9 @@
 import SwiftUI
 
 class NavigationBarViewModel: ObservableObject {
-    var title: String = DefaultValues.string
-    var imageString: String = DefaultValues.string
+    @Published var isHidden: Bool = false
     @Published var rightButtonViewModel = ButtonViewModel()
     @Published var backButtonViewModel = ButtonViewModel()
+    var title: String = DefaultValues.string
+    var imageString: String = DefaultValues.string
 }

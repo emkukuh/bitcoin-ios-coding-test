@@ -69,7 +69,7 @@ struct NavigationBarView<Content: View>: View {
                 Spacer()
                 renderRightButton()
             }
-        }
+        }.setHidden(viewModel.isHidden, isRemove: true)
     }
 
     private func renderBody() -> some View {
